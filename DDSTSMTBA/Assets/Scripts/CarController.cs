@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     private bool isBreaking;
 
     [SerializeField] private float attackChargeTime = 0.24f;
+    [SerializeField] private Animator animator;
 
     private bool isAttacking = false;
     private bool isChargingAttack = false;
@@ -144,8 +145,9 @@ public class CarController : MonoBehaviour
         {
             attackChargeStartTime = Time.time;
             isChargingAttack = true;
-            // TODO start charge anim
-            //      play charge sound
+            // TODO play charge sound
+
+            animator.SetBool("isCharging", true);
         }
         else if (isAttacking == true)
         {
@@ -180,9 +182,9 @@ public class CarController : MonoBehaviour
 
         if (isAttacking)
         {
+            animator.SetBool("isAttacking", true);
             attackHitbox.SetActive(true);
-            // TODO play attack anim
-            //      play attack sound
+            // TODO play attack sound
 
             yield return new WaitForSeconds(0.1f);
 
@@ -190,6 +192,8 @@ public class CarController : MonoBehaviour
             isChargingAttack = false;
 
             attackHitbox.SetActive(false);
+            animator.SetBool("isAttacking", false);
+            animator.SetBool("isCharging", false);
             // TODO play idle anim 
         }
     }
