@@ -320,6 +320,19 @@
 						</MusicSegment>
 					</ChildrenList>
 					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{4B341265-ED0D-496B-A4D2-29A1F6C5D76C}" ShortID="146020768">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+												<ObjectRef Name="test_comp" ID="{0BF65452-3C67-49AA-A05C-B4F6DFCA11E6}" WorkUnitID="{2F589471-FFB1-4847-B830-592B9CA730AE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
 						<ObjectList Name="RTPC">
 							<Reference>
 								<Local>

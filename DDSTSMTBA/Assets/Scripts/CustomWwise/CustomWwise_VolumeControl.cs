@@ -20,8 +20,6 @@ public class CustomWwise_VolumeControl : MonoBehaviour
     {
         float timer = 0f;
 
-        Debug.Log("Start");
-
         while (timer < hitDuration)
         {
             float lerp = timer / hitDuration;
@@ -29,13 +27,9 @@ public class CustomWwise_VolumeControl : MonoBehaviour
 
             backgroundMusicVolume_RTPC.SetValue(gameObject, Mathf.Lerp(minValue, maxValue, eval));
 
-            Debug.Log(Mathf.Lerp(minValue, maxValue, eval));
-
             timer += Time.deltaTime;
 
             yield return new WaitForEndOfFrame();
         }
-
-        Debug.Log("End");
     }
 }
