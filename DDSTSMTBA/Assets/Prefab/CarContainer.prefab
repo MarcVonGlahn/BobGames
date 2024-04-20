@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 631555321754047709}
   - component: {fileID: 8963565003026932766}
   - component: {fileID: 5670127353413782263}
+  - component: {fileID: 4705010125344235211}
   m_Layer: 0
   m_Name: Car
   m_TagString: NPC
@@ -299,7 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chasingState: 2
   target: {fileID: 0}
-  speed: 10
+  speed: 40
   initalPeace: 2
   inAction: 0
   goingToStart: 0
@@ -319,7 +320,7 @@ MonoBehaviour:
   m_PlayOnAwake: 1
   m_LoopMode: 1
   m_Method: 0
-  m_Duration: 8
+  m_Duration: 12
   m_MaxSpeed: 9.14319
   m_EasingMode: 0
   m_AlignmentMode: 1
@@ -374,3 +375,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4705010125344235211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377897187149459831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff5680bc89d91647a62f7240393c6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSecretEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

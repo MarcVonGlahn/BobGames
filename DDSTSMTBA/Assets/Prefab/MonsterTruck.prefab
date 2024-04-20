@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913095116917022785}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21562819, y: -0.000000008400806, z: 0.0000000018550907, w: 0.97647554}
+  m_LocalRotation: {x: 0.21562819, y: 0.000000008400803, z: -0.0000000018550902, w: 0.97647554}
   m_LocalPosition: {x: 0, y: 5.4300003, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8129931dc6f3d58478542b27458a4520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcTag: Test
+  npcTag: NPC
 --- !u!1 &3762550209730895150
 GameObject:
   m_ObjectHideFlags: 0

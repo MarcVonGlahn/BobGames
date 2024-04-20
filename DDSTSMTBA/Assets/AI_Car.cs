@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.AI.Navigation;
 using UnityEngine.Splines;
-using UnityEngine.AI;
 
 public class AI_Car : MonoBehaviour
 {
@@ -106,6 +105,13 @@ public class AI_Car : MonoBehaviour
             target = other.transform;
             inAction = true;
         }
+    }
+
+    public void TakeHit()
+    {
+        Debug.Log("Playing secret");
+        //GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
+        //explode here
     }
 }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlapTrigger : MonoBehaviour
 {
-    public float triggerTime = 1f;
+    public float triggerTime = 0.1f;
 
     private bool _inTriggerZone;
 
@@ -21,6 +21,7 @@ public class SlapTrigger : MonoBehaviour
             return;
 
         hitTarget = other.gameObject;
+        StopAllCoroutines();
         StartCoroutine(ChargeSlap());
         _inTriggerZone = true;
     }
@@ -38,7 +39,7 @@ public class SlapTrigger : MonoBehaviour
 
         if (_inTriggerZone)
         {
-            Debug.Log("SLAPPPP");
+            hitTarget.GetComponent<AI_Car>().TakeHit();
             Destroy(hitTarget);
         }
     }

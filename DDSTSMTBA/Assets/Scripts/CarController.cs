@@ -131,7 +131,6 @@ public class CarController : MonoBehaviour
     private IEnumerator DoAttack_Routine()
     {
         attackHitbox.SetActive(true);
-
         yield return new WaitForEndOfFrame();
 
         attackHitbox.SetActive(false);
