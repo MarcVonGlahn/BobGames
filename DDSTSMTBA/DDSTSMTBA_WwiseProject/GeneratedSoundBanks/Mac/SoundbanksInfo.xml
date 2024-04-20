@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A1F43BFD-24B7-8070-BC9A-E01C08A71E05}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,11 +21,18 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3F39E810-291F-AF65-DBA5-B2F58C1A177B}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{7EE5A695-976D-9E92-478A-F1FB99AEA1B6}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
+				<File Id="43685897" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>watching.wav</ShortName>
+					<CachePath>SFX/watching_8C127E8F.wem</CachePath>
+				</File>
 				<File Id="198160628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dogs paws.wav</ShortName>
 					<CachePath>SFX/Dogs paws_87563C71.wem</CachePath>
@@ -70,16 +77,23 @@
 					<ShortName>Stole your food.wav</ShortName>
 					<CachePath>SFX/Stole your food_818F3B66.wem</CachePath>
 				</File>
+				<File Id="974756713" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Velociton_Driver_loop.wav</ShortName>
+					<CachePath>SFX/Velociton_Driver_loop_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="OneShot" DurationMin="51.79406" DurationMax="51.79406">
+				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="778510807"/>
 						<MediaRef Id="844022920"/>
+						<MediaRef Id="974756713"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="3">
+				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="3.0477514">
 					<MediaRefs>
+						<MediaRef Id="43685897"/>
 						<MediaRef Id="198160628"/>
 						<MediaRef Id="256618402"/>
 						<MediaRef Id="338812724"/>
@@ -95,7 +109,10 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A02AEB42-85EB-8114-B2DF-9D58AF9B2841}</FileHash>
+	<FileHash>{A267D856-B213-3F90-E47B-1CD7008DEE03}</FileHash>
 </SoundBanksInfo>

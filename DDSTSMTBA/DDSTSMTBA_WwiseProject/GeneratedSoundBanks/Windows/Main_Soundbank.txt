@@ -10,15 +10,17 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	198160628	Dogs paws	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Dogs paws_EA78DC08.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Dogs paws		350588
+	43685897	watching	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\watching_8C127E8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\watching		292680
+	198160628	Dogs paws	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Dogs paws_87563C71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Dogs paws		350588
 	256618402	Big penis	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Big penis _818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Big penis		308796
 	338812724	Small penis	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Small penis _818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Small penis		308796
 	371641225	Toiletbrush	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Toiletbrush_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Toiletbrush		441096
-	452517742	Ugly boyrfriend	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Ugly boyrfriend_43DFEDDD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Ugly boyrfriend		294480
-	454256881	Boogers	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Boogers_FCD57090.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Boogers		251016
-	524208417	Moan	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Moan_1550FF7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Moan		210204
+	452517742	Ugly boyrfriend	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Ugly boyrfriend_1EC7DDC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Ugly boyrfriend		294480
+	454256881	Boogers	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Boogers_765459C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Boogers		251016
+	524208417	Moan	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Moan_84381034.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Moan		210204
 	588112302	Mommy	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Mommy_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Mommy		529296
 	778510807	Velociton_driver	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Velociton_driver_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusic\Velociton_driver\Velociton_driver		9136568
 	844022920	Velociton_driver_with_anouncer	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Velociton_driver_with_anouncer_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusic\Velociton_driver_with_anouncer\Velociton_driver_with_anouncer		9136568
 	866418995	Stole your food	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Stole your food_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Stole your food		308796
+	974756713	Velociton_Driver_loop	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Velociton_Driver_loop_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusic\Velociton_Driver_loop\Velociton_Driver_loop		7561312
 

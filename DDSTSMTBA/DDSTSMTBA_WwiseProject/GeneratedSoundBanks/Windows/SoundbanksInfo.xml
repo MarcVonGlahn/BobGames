@@ -25,13 +25,17 @@
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{6A2DEF43-2C45-7E85-ACD1-9CFAF1517F4E}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{7EE5A695-976D-9E92-478A-F1FB99AEA1B6}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
+				<File Id="43685897" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>watching.wav</ShortName>
+					<CachePath>SFX/watching_8C127E8F.wem</CachePath>
+				</File>
 				<File Id="198160628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dogs paws.wav</ShortName>
-					<CachePath>SFX/Dogs paws_EA78DC08.wem</CachePath>
+					<CachePath>SFX/Dogs paws_87563C71.wem</CachePath>
 				</File>
 				<File Id="256618402" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Big penis .wav</ShortName>
@@ -47,15 +51,15 @@
 				</File>
 				<File Id="452517742" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ugly boyrfriend.wav</ShortName>
-					<CachePath>SFX/Ugly boyrfriend_43DFEDDD.wem</CachePath>
+					<CachePath>SFX/Ugly boyrfriend_1EC7DDC1.wem</CachePath>
 				</File>
 				<File Id="454256881" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boogers.wav</ShortName>
-					<CachePath>SFX/Boogers_FCD57090.wem</CachePath>
+					<CachePath>SFX/Boogers_765459C9.wem</CachePath>
 				</File>
 				<File Id="524208417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Moan.wav</ShortName>
-					<CachePath>SFX/Moan_1550FF7A.wem</CachePath>
+					<CachePath>SFX/Moan_84381034.wem</CachePath>
 				</File>
 				<File Id="588112302" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mommy.wav</ShortName>
@@ -73,17 +77,23 @@
 					<ShortName>Stole your food.wav</ShortName>
 					<CachePath>SFX/Stole your food_818F3B66.wem</CachePath>
 				</File>
+				<File Id="974756713" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Velociton_Driver_loop.wav</ShortName>
+					<CachePath>SFX/Velociton_Driver_loop_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="OneShot" DurationMin="51.79406" DurationMax="51.79406">
+				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="778510807"/>
 						<MediaRef Id="844022920"/>
+						<MediaRef Id="974756713"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="3">
+				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="3.0477514">
 					<MediaRefs>
+						<MediaRef Id="43685897"/>
 						<MediaRef Id="198160628"/>
 						<MediaRef Id="256618402"/>
 						<MediaRef Id="338812724"/>
@@ -104,5 +114,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B184E60F-BA6C-54C2-8B03-5A4D90F2CBD3}</FileHash>
+	<FileHash>{2BACC5DD-AF0F-24B9-457E-CE4681D81957}</FileHash>
 </SoundBanksInfo>
