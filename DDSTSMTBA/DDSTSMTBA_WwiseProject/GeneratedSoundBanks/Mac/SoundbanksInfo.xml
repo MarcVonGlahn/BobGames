@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{82F867D3-06A9-D3C2-7350-8B4D05C07587}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0092C638-83F9-08BC-E249-C1CE217C6DC8}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -36,7 +36,7 @@
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{C88177C5-031E-4241-7714-A227DB962ABD}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{B68390D4-D436-2A9C-D199-F14BB9B1D335}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -284,5 +284,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E9099A50-D8B7-7EDE-2E1F-51595F8AC539}</FileHash>
+	<FileHash>{532440A4-E89D-7D9C-191A-0E5E134E4FD7}</FileHash>
 </SoundBanksInfo>

@@ -381,7 +381,7 @@
 															</Point>
 															<Point>
 																<XPos>-47</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>SCurve</SegmentShape>
 															</Point>
@@ -401,6 +401,92 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicPlaylistContainer>
+				<MusicSegment Name="Win jingle" ID="{40DC5687-8E4A-4E67-B811-B693CE8B8B52}" ShortID="266014256">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="8520.72562358277"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Win jingle" ID="{4FD82DA7-B0A1-4E56-8C24-FB1E31E764AC}" ShortID="201998571">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{373866EC-7D1B-4D73-96EB-CA57016D0F53}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Win jingle" ID="{E6B6A483-9533-4C81-A37A-4005374428C0}">
+									<Language>SFX</Language>
+									<AudioFile>Win jingle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="37663742"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{6B5D14E2-28A7-4676-BF25-46C901CEB4D1}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Win jingle" ID="{907A4CF6-374D-455A-BE4A-8095B16C326F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8520.72562358277"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Win jingle" ID="{E6B6A483-9533-4C81-A37A-4005374428C0}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{291553C4-100C-4AB6-BFDA-DFEC1ABD5390}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{AF7D3560-1ECC-40E7-B5B0-FD10CA095D74}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="8520.72562358277"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

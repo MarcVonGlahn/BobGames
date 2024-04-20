@@ -46,47 +46,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2948c00744475ad41ab7144314ab2353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minValue: 20
-  maxValue: 100
-  backgroundAnimCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: -3.274419
-      outSlope: -3.274419
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.047727272
-    - serializedVersion: 3
-      time: 0.5
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2.7286851
-      outSlope: 2.7286851
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.047727227
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   backgroundMusicVolume_RTPC:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bdf12a11bf7bf6a498576724c20b72b5,
       type: 2}
   bgMusicVolume: 100
+  stopBackgroundMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0bfea9c920bfe7443ab8e7dfe38b9bdc,
+      type: 2}
+  playWinningSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ab0e0a7218d8a448adbe9112d4e5cfd,
+      type: 2}
+  playLosingSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1117424501177359197
 MonoBehaviour:
   m_ObjectHideFlags: 0
