@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3F39E810-291F-AF65-DBA5-B2F58C1A177B}">
+			<ShortName>Main_Soundbank</ShortName>
+			<Path>Main_Soundbank.bnk</Path>
+			<Media>
+				<File Id="198160628" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dogs paws.wav</ShortName>
+					<CachePath>SFX/Dogs paws_87563C71.wem</CachePath>
+				</File>
+				<File Id="256618402" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Big penis .wav</ShortName>
+					<CachePath>SFX/Big penis _818F3B66.wem</CachePath>
+				</File>
+				<File Id="338812724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small penis .wav</ShortName>
+					<CachePath>SFX/Small penis _818F3B66.wem</CachePath>
+				</File>
+				<File Id="371641225" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Toiletbrush.wav</ShortName>
+					<CachePath>SFX/Toiletbrush_818F3B66.wem</CachePath>
+				</File>
+				<File Id="452517742" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ugly boyrfriend.wav</ShortName>
+					<CachePath>SFX/Ugly boyrfriend_1EC7DDC1.wem</CachePath>
+				</File>
+				<File Id="454256881" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Boogers.wav</ShortName>
+					<CachePath>SFX/Boogers_765459C9.wem</CachePath>
+				</File>
+				<File Id="524208417" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Moan.wav</ShortName>
+					<CachePath>SFX/Moan_84381034.wem</CachePath>
+				</File>
+				<File Id="588112302" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mommy.wav</ShortName>
+					<CachePath>SFX/Mommy_818F3B66.wem</CachePath>
+				</File>
+				<File Id="778510807" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Velociton_driver.wav</ShortName>
+					<CachePath>SFX/Velociton_driver_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="844022920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Velociton_driver_with_anouncer.wav</ShortName>
+					<CachePath>SFX/Velociton_driver_with_anouncer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="866418995" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stole your food.wav</ShortName>
+					<CachePath>SFX/Stole your food_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="OneShot" DurationMin="51.79406" DurationMax="51.79406">
+					<MediaRefs>
+						<MediaRef Id="778510807"/>
+						<MediaRef Id="844022920"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="198160628"/>
+						<MediaRef Id="256618402"/>
+						<MediaRef Id="338812724"/>
+						<MediaRef Id="371641225"/>
+						<MediaRef Id="452517742"/>
+						<MediaRef Id="454256881"/>
+						<MediaRef Id="524208417"/>
+						<MediaRef Id="588112302"/>
+						<MediaRef Id="866418995"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{79CEEFB5-A1FA-796F-5853-7738E3033B56}</FileHash>
+</SoundBanksInfo>
