@@ -22,15 +22,29 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform frontLeftWheelTransform, frontRightWheelTransform;
     [SerializeField] private Transform rearLeftWheelTransform, rearRightWheelTransform;
 
+    // BaseCar
+    [SerializeField] private BaseCar _baseCar;
+
     [Header("Attack")]
     public float maxAttackCharge = 3f;
     public float currentAttackCharge = 0f;
     public GameObject attackHitbox;
     public string npcTag = "NPC";
 
+    public bool EXPLODE;
+
     private void Start()
     {
         attackHitbox.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (EXPLODE)
+        {
+            StartCoroutine(_baseCar.Explode());
+            this.enabled = false;
+        }
     }
 
     private void FixedUpdate()
