@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{3719469B-F57B-40ED-A0A8-857CFFACC419}" PersistMode="Standalone">
 			<ChildrenList>
 				<RandomSequenceContainer Name="Secrets" ID="{AF291339-EF19-451B-A5BE-BD7E6365CD59}" ShortID="495537564">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>

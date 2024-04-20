@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b6cafa0f1f59946930cc34ebecee50, type: 3}
+  m_Name: 4091CC84-9996-46FF-81DE-9FD025453DF5
+  m_EditorClassIdentifier: 
+  objectName: BackgroundMusicVolume
+  id: 2043973872
+  guid: 4091CC84-9996-46FF-81DE-9FD025453DF5

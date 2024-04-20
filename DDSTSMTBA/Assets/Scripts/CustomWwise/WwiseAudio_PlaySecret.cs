@@ -18,5 +18,10 @@ public class WwiseAudio_PlaySecret : MonoBehaviour
     public void PlaySecret()
     {
         _ambient.data.Post(gameObject);
+
+        FindObjectOfType<CustomWwise_VolumeControl>().DoVolumeMuteRoutine();
     }
+
+
+    
 }
