@@ -15,6 +15,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	23194654	MainBus_Meter_Effect	Wwise Meter			
+	2983454812	engine_eq	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	39508209	WhatsApp Ptt 2024-04-20 at 18_32_53	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\WhatsApp Ptt 2024-04-20 at 18.32.53_82F1E566.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_32_53		493446

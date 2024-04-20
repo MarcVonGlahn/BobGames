@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0779CDB6-A976-10E9-04C4-E779D02CB956}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6DCEBDC5-3C88-51CE-2F69-B050F82EBBB3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -36,7 +36,7 @@
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{123E9C08-08FF-1851-90ED-77A614F79FC9}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{CAA769A7-FF57-408E-A602-C47DD3157896}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -180,6 +180,7 @@
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="23194654" Name="MainBus_Meter_Effect" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="2983454812" Name="engine_eq" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -203,6 +204,11 @@
 					<MediaRefs>
 						<MediaRef Id="407818786"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2983454812"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="5.139065">
 					<MediaRefs>
@@ -251,5 +257,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7DD377DC-2907-2B33-279A-46BF338CCF97}</FileHash>
+	<FileHash>{F1041B62-9473-C71B-22B5-EDEA39D25C2C}</FileHash>
 </SoundBanksInfo>
