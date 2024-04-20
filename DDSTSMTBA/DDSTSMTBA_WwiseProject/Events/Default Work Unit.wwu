@@ -36,6 +36,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Braking" ID="{71E9E909-CFD8-435D-A560-CBFD8B4ECFD8}">
+					<ChildrenList>
+						<Action Name="" ID="{C78B92FB-03E2-4F0D-A0B6-5CF5F3506E8E}" ShortID="583125036">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Braking" ID="{907AC138-376E-4509-8C49-8476399E431F}" WorkUnitID="{3719469B-F57B-40ED-A0A8-857CFFACC419}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RaceCar_EngineSound" ID="{EBB9069E-A7E4-4E2A-AF40-4CF57E26741F}">
+					<ChildrenList>
+						<Action Name="" ID="{8D1E8CFE-C503-4EED-A039-A9AE857C6F66}" ShortID="1066563966">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RaceCar_EngineSound" ID="{6A6D276F-5188-4AB6-8AAB-D38A88C7F348}" WorkUnitID="{3719469B-F57B-40ED-A0A8-857CFFACC419}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

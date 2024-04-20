@@ -14,15 +14,23 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BACKGROUNDMUSIC = 548088167U;
+        static const AkUniqueID PLAY_BRAKING = 4061097622U;
         static const AkUniqueID PLAY_HIT = 2960666077U;
+        static const AkUniqueID PLAY_RACECAR_ENGINESOUND = 2957517431U;
         static const AkUniqueID PLAY_SECRETS = 3269136221U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID BACKGROUNDMUSICVOLUME = 2043973872U;
+        static const AkUniqueID ENGINE_PITCH_RTPC = 3767000970U;
         static const AkUniqueID SIDECHAINING_RTPC = 1128801621U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID STOPBREAKING_TRIGGER = 1194177351U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
