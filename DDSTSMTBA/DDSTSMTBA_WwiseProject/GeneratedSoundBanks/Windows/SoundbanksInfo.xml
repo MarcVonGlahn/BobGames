@@ -36,10 +36,14 @@
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{8F4E0A2A-4013-BEFE-D546-55B5D0151CEA}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{C88177C5-031E-4241-7714-A227DB962ABD}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
+				<File Id="9921773" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slap.wav</ShortName>
+					<CachePath>SFX/Slap_818F3B66.wem</CachePath>
+				</File>
 				<File Id="39508209" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.32.53.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.32.53_B98B60F9.wem</CachePath>
@@ -108,6 +112,10 @@
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.14.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.31.14_BBE1293B.wem</CachePath>
 				</File>
+				<File Id="579947419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Punch long grate.wav</ShortName>
+					<CachePath>SFX/Punch long grate_818F3B66.wem</CachePath>
+				</File>
 				<File Id="588112302" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mommy.wav</ShortName>
 					<CachePath>SFX/Mommy_818F3B66.wem</CachePath>
@@ -116,6 +124,10 @@
 					<ShortName>Gravel Brake.wav</ShortName>
 					<CachePath>SFX/Gravel Brake_5139C7C5.wem</CachePath>
 				</File>
+				<File Id="672839098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slap_woosh.wav</ShortName>
+					<CachePath>SFX/Slap_woosh_818F3B66.wem</CachePath>
+				</File>
 				<File Id="707959549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.21.07.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.21.07_383AFD6C.wem</CachePath>
@@ -123,6 +135,10 @@
 				<File Id="739403030" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.23.38.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.23.38_08251985.wem</CachePath>
+				</File>
+				<File Id="767979874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Punch short ding.wav</ShortName>
+					<CachePath>SFX/Punch short ding_818F3B66.wem</CachePath>
 				</File>
 				<File Id="777519598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.25.wav</ShortName>
@@ -199,8 +215,18 @@
 						<MediaRef Id="848099131"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1631400290" Name="Play_Miss" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0.39060417" DurationMax="1.3766875">
+					<MediaRefs>
+						<MediaRef Id="9921773"/>
+						<MediaRef Id="579947419"/>
+						<MediaRef Id="767979874"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1631400290" Name="Play_Miss" DurationType="OneShot" DurationMin="0.13111112" DurationMax="0.13111112">
+					<MediaRefs>
+						<MediaRef Id="672839098"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2957517431" Name="Play_RaceCar_EngineSound" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="407818786"/>
@@ -258,5 +284,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0E239E13-2839-A3DE-487D-03B2EA97442E}</FileHash>
+	<FileHash>{EDEB92DE-6AC8-BE8A-942F-F01E7FDCDA24}</FileHash>
 </SoundBanksInfo>

@@ -714,6 +714,74 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Punch long grate" ID="{E1872BFD-D584-4168-AC70-8017CD9E0961}" ShortID="646004918">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Punch long grate" ID="{7CED2F78-94C0-4D1C-A3BB-305AD79BB350}">
+									<Language>SFX</Language>
+									<AudioFile>Punch long grate.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="579947419"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Punch long grate" ID="{7CED2F78-94C0-4D1C-A3BB-305AD79BB350}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Punch short ding" ID="{763B60E1-5A32-47B4-A244-A72C658B8F1A}" ShortID="1017011302">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Punch short ding" ID="{6AEEE6BB-889E-4DA6-896E-BC6B3C3F37E4}">
+									<Language>SFX</Language>
+									<AudioFile>Punch short ding.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="767979874"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Punch short ding" ID="{6AEEE6BB-889E-4DA6-896E-BC6B3C3F37E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Slap" ID="{7B362484-6855-4C3D-9A48-FB0348145BDC}" ShortID="684164015">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Slap" ID="{885BA806-222E-48E3-AA52-0000E3F28BC3}">
+									<Language>SFX</Language>
+									<AudioFile>Slap.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="9921773"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Slap" ID="{885BA806-222E-48E3-AA52-0000E3F28BC3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Miss" ID="{F134DEE3-4D47-4BA7-9F60-BF017D586B76}" ShortID="646534415">
 					<ReferenceList>
@@ -724,6 +792,30 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Slap_woosh" ID="{3203CEA1-164A-43E9-81B7-6734B6400F28}" ShortID="198454669">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Slap_woosh" ID="{BE1B516F-FDE0-4FDC-9D08-54959146AB58}">
+									<Language>SFX</Language>
+									<AudioFile>Slap_woosh.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="672839098"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Slap_woosh" ID="{BE1B516F-FDE0-4FDC-9D08-54959146AB58}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Braking" ID="{907AC138-376E-4509-8C49-8476399E431F}" ShortID="1013507222">
 					<ReferenceList>
