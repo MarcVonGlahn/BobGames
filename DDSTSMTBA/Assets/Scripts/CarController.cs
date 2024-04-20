@@ -24,8 +24,14 @@ public class CarController : MonoBehaviour
 
     [Header("Attack")]
     public float maxAttackCharge = 3f;
-
     public float currentAttackCharge = 0f;
+    public GameObject attackHitbox;
+    public string npcTag = "NPC";
+
+    private void Start()
+    {
+        attackHitbox.SetActive(false);
+    }
 
     private void FixedUpdate()
     {
@@ -115,10 +121,19 @@ public class CarController : MonoBehaviour
     private void DoAttack()
     {
         // Do Attack with current charge
-
+        StartCoroutine(DoAttack_Routine());
 
         // Reset Attack Charge
         currentAttackCharge = 0f;
+    }
 
+
+    private IEnumerator DoAttack_Routine()
+    {
+        attackHitbox.SetActive(true);
+
+        yield return new WaitForEndOfFrame();
+
+        attackHitbox.SetActive(false);
     }
 }

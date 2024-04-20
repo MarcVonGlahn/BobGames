@@ -1,6 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}" SchemaVersion="119">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="BackgroundMusic" ID="{ADBF3F6B-668E-4A9D-9DA6-7421ED3BEDF3}" ShortID="1046342864">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{D3452741-CF37-4E85-A557-BB842AFC025A}" ShortID="263760820">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{AEBF7B5B-B8FE-42FE-9CA2-334CE5B90A03}" ShortID="716053953">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="Velociton_driver_with_anouncer" ID="{5493516C-4D97-4D50-94B4-2A3F3902B45B}" WorkUnitID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{2BF25FB6-333F-4B77-942B-7E6ACEDA242E}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{6B2D0BA3-FC99-4C2E-B522-8EAECFD1DD09}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Velociton_driver_with_anouncer" ID="{5493516C-4D97-4D50-94B4-2A3F3902B45B}" ShortID="256751443">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="51794.0589569161"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Velociton_driver_with_anouncer" ID="{3357C5E9-E61F-4354-AC72-2E38C9BB2446}" ShortID="400686342">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{0803A99F-37F2-49FD-A9D7-7B3FC1829316}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Velociton_driver_with_anouncer" ID="{BDD293B9-5C91-48A0-B7FB-8FA4394CCC40}">
+											<Language>SFX</Language>
+											<AudioFile>Velociton_driver_with_anouncer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="844022920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B73FFBF3-F649-4497-804D-890A17D07CDB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Velociton_driver_with_anouncer" ID="{71443FFC-A2D1-4AA3-9CBA-385215EC4608}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="51794.0589569161"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Velociton_driver_with_anouncer" ID="{BDD293B9-5C91-48A0-B7FB-8FA4394CCC40}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{BBFA2BA2-008D-4071-A75C-44C7147C1212}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{31837DBA-30E2-4DF7-B77E-F99C2D87E085}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="51794.0589569161"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Velociton_driver" ID="{295D7176-FECD-4100-B70A-D5CF9DC2B82C}" ShortID="135019407">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="51794.0589569161"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Velociton_driver" ID="{B1A5994B-587C-4EB4-A517-15455FB1D17D}" ShortID="1055391885">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{11474574-E4B1-4A62-A50F-0AEC15430042}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Velociton_driver" ID="{80442836-0C45-412E-AAC5-6CF931F0AE3F}">
+											<Language>SFX</Language>
+											<AudioFile>Velociton_driver.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="778510807"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2A673626-41C0-4C6A-BC5B-1F267EE265AF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Velociton_driver" ID="{27E22387-90E1-4788-8C0F-F214E5B77EB6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="51794.0589569161"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Velociton_driver" ID="{80442836-0C45-412E-AAC5-6CF931F0AE3F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{AD68E2CB-E7FF-4583-A223-93D6DB5B344C}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{55D6E785-9392-45A4-B4C7-94B9AC61A6F6}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="51794.0589569161"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

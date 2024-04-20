@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{864ED754-3F26-493A-9678-145D1C50165E}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{864ED754-3F26-493A-9678-145D1C50165E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{864ED754-3F26-493A-9678-145D1C50165E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Secrets" ID="{C5BDDF11-875A-4377-AA30-7AC6EA9EF2DF}">
+					<ChildrenList>
+						<Action Name="" ID="{73444DB4-44D8-43D4-99B5-080502D720F5}" ShortID="581229282">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Secrets" ID="{AF291339-EF19-451B-A5BE-BD7E6365CD59}" WorkUnitID="{3719469B-F57B-40ED-A0A8-857CFFACC419}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BackgroundMusic" ID="{74B771F0-3DCE-4AB8-A833-9908D452D9A6}">
+					<ChildrenList>
+						<Action Name="" ID="{BEF0F649-28E3-4296-BA54-FCBDBE01E379}" ShortID="979063041">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgroundMusic" ID="{ADBF3F6B-668E-4A9D-9DA6-7421ED3BEDF3}" WorkUnitID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Hit" ID="{9780A97D-8E58-4177-A8EF-D7243728228B}">
+					<ChildrenList>
+						<Action Name="" ID="{7B1C95AE-FEBE-4B53-B7A5-B65B41F5D0C2}" ShortID="329939017">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{F7287DEB-B301-42EF-B529-28304AC3138C}" WorkUnitID="{3719469B-F57B-40ED-A0A8-857CFFACC419}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -11,6 +11,12 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_BACKGROUNDMUSIC = 548088167U;
+        static const AkUniqueID PLAY_SECRETS = 3269136221U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
