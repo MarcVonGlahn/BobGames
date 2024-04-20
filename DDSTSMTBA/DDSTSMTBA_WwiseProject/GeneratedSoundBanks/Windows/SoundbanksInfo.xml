@@ -9,23 +9,33 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2C7B22E9-D0D5-F914-D0ED-CB717261D0E1}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{299E9FF0-388B-95F6-C076-DFEA4657A5CE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="23194654" Name="MainBus_Meter_Effect" LibName="Wwise Meter" LibId="8454147"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="23194654"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{4219132C-ABF3-AA8A-02A2-0185A6304942}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{B44FE5A3-8763-AA81-13D8-863359CDA551}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -146,6 +156,11 @@
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.28.34_CB3A83F5.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="23194654" Name="MainBus_Meter_Effect" LibName="Wwise Meter" LibId="8454147"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="Infinite">
 					<MediaRefs>
@@ -187,12 +202,19 @@
 				</Event>
 			</Events>
 			<Busses>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="23194654"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EBE84868-4524-7C19-1405-CF5AA2D5DEE5}</FileHash>
+	<FileHash>{5F6A4B4D-8644-F4D0-32F8-A63478A8E8A5}</FileHash>
 </SoundBanksInfo>

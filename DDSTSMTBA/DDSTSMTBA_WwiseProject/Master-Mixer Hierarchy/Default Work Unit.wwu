@@ -9,6 +9,21 @@
 							<ObjectRef Name="System" ID="{139EB5D3-8B79-4CB8-A7CD-094B4D8638F0}" WorkUnitID="{02C9D001-7564-4EB9-AA7C-6D0052EE9328}"/>
 						</Reference>
 					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{08419692-2932-4C1E-B086-09D971374078}" ShortID="561368692">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="MainBus_Meter_Effect" ID="{6CB89065-F47B-4439-A76F-87C68863B3F9}" WorkUnitID="{2F589471-FFB1-4847-B830-592B9CA730AE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

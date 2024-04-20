@@ -320,19 +320,6 @@
 						</MusicSegment>
 					</ChildrenList>
 					<ObjectLists>
-						<ObjectList Name="Effects">
-							<Reference>
-								<Local>
-									<EffectSlot Name="" ID="{4B341265-ED0D-496B-A4D2-29A1F6C5D76C}" ShortID="146020768">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-												<ObjectRef Name="test_comp" ID="{0BF65452-3C67-49AA-A05C-B4F6DFCA11E6}" WorkUnitID="{2F589471-FFB1-4847-B830-592B9CA730AE}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</Local>
-							</Reference>
-						</ObjectList>
 						<ObjectList Name="RTPC">
 							<Reference>
 								<Local>
@@ -359,6 +346,47 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{976E380B-CDE0-4B6E-9BC8-AE2D76D37D8B}" ShortID="81269213">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SideChaining_RTPC" ID="{8A9668D5-B69C-4A97-93E0-A14A47B30651}" WorkUnitID="{62326644-26CC-4272-A907-EE433E792F9B}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{BEEA5AD3-50D4-494D-9942-4AA295D18AEF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-47</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>SCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

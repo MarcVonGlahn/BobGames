@@ -13,11 +13,13 @@ public class CustomWwise_VolumeControl : MonoBehaviour
 
     public void DoVolumeMuteRoutine()
     {
-        StartCoroutine(BackgroundMusic_VolumeCurve(2f));
+        //StartCoroutine(BackgroundMusic_VolumeCurve(2f));
     }
 
     private IEnumerator BackgroundMusic_VolumeCurve(float hitDuration)
     {
+
+
         float timer = 0f;
 
         while (timer < hitDuration)

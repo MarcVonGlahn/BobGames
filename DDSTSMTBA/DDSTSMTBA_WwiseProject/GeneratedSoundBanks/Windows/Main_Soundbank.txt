@@ -4,10 +4,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	3269136221	Play_Secrets			\Default Work Unit\Play_Secrets	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1128801621	SideChaining_RTPC			\Default Work Unit\SideChaining_RTPC	
 	2043973872	BackgroundMusicVolume			\Default Work Unit\BackgroundMusicVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	23194654	MainBus_Meter_Effect	Wwise Meter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	39508209	WhatsApp Ptt 2024-04-20 at 18_32_53	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\WhatsApp Ptt 2024-04-20 at 18.32.53_82F1E566.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_32_53		493446
