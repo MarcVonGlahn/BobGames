@@ -10,9 +10,6 @@ public class CarController : MonoBehaviour
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
 
-    [SerializeField] private float attackChargeTime = 0.24f;
-    [SerializeField] private Animator animator;
-
     private bool isAttacking = false;
     private bool isChargingAttack = false;
     private float attackChargeStartTime = -1.0f;
@@ -32,11 +29,11 @@ public class CarController : MonoBehaviour
     [SerializeField] private BaseCar _baseCar;
 
     [Header("Attack")]
-    public float maxAttackCharge = 3f;
-    public float currentAttackCharge = 0f;
-    public GameObject attackHitbox;
-    public string npcTag = "NPC";
-
+    [SerializeField] private float attackChargeTime = 0.24f;
+    [SerializeField] private Animator animator;
+    [SerializeField] private GameObject attackHitbox;
+    [SerializeField] private string npcTag = "NPC";
+       
     public bool EXPLODE;
 
     [Header("Sound")]
