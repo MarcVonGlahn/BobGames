@@ -4,34 +4,37 @@ using UnityEngine;
 
 public class CustomWwise_VolumeControl : MonoBehaviour
 {
-    public float minValue = 20f;
-    public float maxValue = 100f;
-    public AnimationCurve backgroundAnimCurve;
-    [Space]
     [SerializeField] AK.Wwise.RTPC backgroundMusicVolume_RTPC;
     [SerializeField][Range(0, 100)] float bgMusicVolume = 100;
 
-    public void DoVolumeMuteRoutine()
+    public AK.Wwise.Event stopBackgroundMusicEvent;
+    public AK.Wwise.Event playWinningSoundEvent;
+    public AK.Wwise.Event playLosingSoundEvent;
+
+    private AkAmbient _akAmbient;
+    private AkAmbient _tempGameEndAkAmbient;
+
+    private void Start()
     {
-        //StartCoroutine(BackgroundMusic_VolumeCurve(2f));
+        _akAmbient = GetComponent<AkAmbient>();
     }
 
-    private IEnumerator BackgroundMusic_VolumeCurve(float hitDuration)
+    public void PlayGameEndSound(bool hasWon = true)
     {
+        stopBackgroundMusicEvent.Post(gameObject);
 
+        _tempGameEndAkAmbient = gameObject.AddComponent<AkAmbient>();
 
-        float timer = 0f;
-
-        while (timer < hitDuration)
+        if(hasWon)
         {
-            float lerp = timer / hitDuration;
-            float eval = backgroundAnimCurve.Evaluate(lerp);
-
-            backgroundMusicVolume_RTPC.SetValue(gameObject, Mathf.Lerp(minValue, maxValue, eval));
-
-            timer += Time.deltaTime;
-
-            yield return new WaitForEndOfFrame();
+            _tempGameEndAkAmbient.data = playWinningSoundEvent;
+            playWinningSoundEvent.Post(gameObject);
+        }
+        else
+        {
+            _tempGameEndAkAmbient.data = playLosingSoundEvent;
+            playLosingSoundEvent.Post(gameObject);
         }
     }
+
 }

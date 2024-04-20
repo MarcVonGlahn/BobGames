@@ -69,6 +69,33 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Win_jingle" ID="{CCDE3AA5-A012-4B14-AB5F-9B1C14A4489C}">
+					<ChildrenList>
+						<Action Name="" ID="{1016A064-540C-4FCA-9445-F6F6F9F90E4A}" ShortID="10685276">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win jingle" ID="{40DC5687-8E4A-4E67-B811-B693CE8B8B52}" WorkUnitID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_BackgroundMusic" ID="{1A29C2B0-53AE-4731-BCE1-5E334EB228FC}">
+					<ChildrenList>
+						<Action Name="" ID="{6C26F06C-4A40-4EB0-91A7-3BE4C7CA4CEB}" ShortID="814275260">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgroundMusic" ID="{ADBF3F6B-668E-4A9D-9DA6-7421ED3BEDF3}" WorkUnitID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
