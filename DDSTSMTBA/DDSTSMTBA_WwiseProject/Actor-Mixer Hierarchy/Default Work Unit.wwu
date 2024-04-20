@@ -890,6 +890,19 @@
 						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{59408FD6-908B-4A67-B5C4-F7C674DE9E17}" ShortID="99112208">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="engine_eq" ID="{159BAD67-9044-4ABF-ABA5-05145BE0BCD8}" WorkUnitID="{2F589471-FFB1-4847-B830-592B9CA730AE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
 						<ObjectList Name="RTPC">
 							<Reference>
 								<Local>

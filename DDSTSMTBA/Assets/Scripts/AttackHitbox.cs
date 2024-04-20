@@ -5,6 +5,10 @@ using UnityEngine;
 public class AttackHitbox : MonoBehaviour
 {
     public string npcTag = "NPC";
+
+    public AK.Wwise.Event hitEvent;
+    public AK.Wwise.Event missEvent;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.isTrigger)

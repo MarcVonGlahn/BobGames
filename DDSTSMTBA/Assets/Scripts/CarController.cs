@@ -33,9 +33,17 @@ public class CarController : MonoBehaviour
 
     public bool EXPLODE;
 
+    [Header("Sound")]
+    public AK.Wwise.Event brakingEvent;
+    public AkAmbient breakingSoundAmbient;
+
     private void Start()
     {
         attackHitbox.SetActive(false);
+
+        breakingSoundAmbient = gameObject.AddComponent<AkAmbient>();
+        breakingSoundAmbient.data = brakingEvent;
+        breakingSoundAmbient.triggerList[0] = 0;
     }
 
     private void Update()
@@ -66,6 +74,12 @@ public class CarController : MonoBehaviour
 
         // Breaking Input
         isBreaking = Input.GetKey(KeyCode.E);
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            brakingEvent.Post(gameObject);
+        }
+
 
         // Attack Input
         isAttacking = Input.GetKey(KeyCode.Space);

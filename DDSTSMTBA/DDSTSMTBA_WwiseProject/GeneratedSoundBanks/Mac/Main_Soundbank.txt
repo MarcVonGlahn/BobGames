@@ -1,46 +1,56 @@
 Event	ID	Name			Wwise Object Path	Notes
 	548088167	Play_BackgroundMusic			\Default Work Unit\Play_BackgroundMusic	
+	1631400290	Play_Miss			\Default Work Unit\Play_Miss	
+	2957517431	Play_RaceCar_EngineSound			\Default Work Unit\Play_RaceCar_EngineSound	
 	2960666077	Play_Hit			\Default Work Unit\Play_Hit	
 	3269136221	Play_Secrets			\Default Work Unit\Play_Secrets	
+	4061097622	Play_Braking			\Default Work Unit\Play_Braking	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1128801621	SideChaining_RTPC			\Default Work Unit\SideChaining_RTPC	
 	2043973872	BackgroundMusicVolume			\Default Work Unit\BackgroundMusicVolume	
+	3767000970	Engine_Pitch_RTPC			\Default Work Unit\Engine_Pitch_RTPC	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
 	23194654	MainBus_Meter_Effect	Wwise Meter			
+	2983454812	engine_eq	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	39508209	WhatsApp Ptt 2024-04-20 at 18_32_53	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.32.53_82F1E566.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_32_53		493446
-	43685897	watching	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\watching_8C127E8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\watching		292680
-	168019246	WhatsApp Ptt 2024-04-20 at 18_20_24	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.20.24_2A52D0E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_20_24		246378
-	179975862	WhatsApp Ptt 2024-04-20 at 18_30_16	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.30.16_41CD45CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_30_16		337262
+	39508209	WhatsApp Ptt 2024-04-20 at 18_32_53	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.32.53_B98B60F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_32_53		493446
+	43685897	watching	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\watching_6CE193ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\watching		292680
+	51158736	Gravel Brake_01	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Gravel Brake_C383C550.wem		\Actor-Mixer Hierarchy\Default Work Unit\Braking\Gravel Brake_01		148328
+	168019246	WhatsApp Ptt 2024-04-20 at 18_20_24	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.20.24_2B508632.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_20_24		246378
+	179975862	WhatsApp Ptt 2024-04-20 at 18_30_16	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.30.16_1FA3249A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_30_16		337262
 	198160628	Dogs paws	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Dogs paws_87563C71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Dogs paws		350588
 	256618402	Big penis	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Big penis _818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Big penis		308796
 	338812724	Small penis	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Small penis _818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Small penis		308796
-	363517743	WhatsApp Ptt 2024-04-20 at 18_24_22	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.24.22_3406ECFD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_24_22		360652
+	363517743	WhatsApp Ptt 2024-04-20 at 18_24_22	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.24.22_EFD31530.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_24_22		360652
 	371641225	Toiletbrush	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Toiletbrush_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Toiletbrush		441096
-	408135982	WhatsApp Ptt 2024-04-20 at 18_22_10	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.22.10_519BD1C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_22_10		356158
+	407818786	RaceCar_EngineSound	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\RaceCar_EngineSound_03_E638CCBC.wem		\Actor-Mixer Hierarchy\Default Work Unit\RaceCar_EngineSound		157678
+	408135982	WhatsApp Ptt 2024-04-20 at 18_22_10	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.22.10_4CB7B8B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_22_10		356158
 	452517742	Ugly boyrfriend	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Ugly boyrfriend_1EC7DDC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Ugly boyrfriend		294480
 	454256881	Boogers	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Boogers_765459C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Boogers		251016
-	521341349	WhatsApp Ptt 2024-04-20 at 18_35_14	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.35.14_7540AA00.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_35_14		235610
+	521341349	WhatsApp Ptt 2024-04-20 at 18_35_14	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.35.14_77F1F210.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_35_14		235610
 	524208417	Moan	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Moan_84381034.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Moan		210204
-	531066773	WhatsApp Ptt 2024-04-20 at 18_31_14	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.31.14_AD5B018B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_31_14		181106
+	531066773	WhatsApp Ptt 2024-04-20 at 18_31_14	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.31.14_BBE1293B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_31_14		181106
 	588112302	Mommy	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Mommy_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Mommy		529296
-	707959549	WhatsApp Ptt 2024-04-20 at 18_21_07	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.21.07_9A14D710.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_21_07		353020
-	739403030	WhatsApp Ptt 2024-04-20 at 18_23_38	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.23.38_7A539FF3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_23_38		353816
-	777519598	WhatsApp Ptt 2024-04-20 at 18_31_25	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.31.25_8E39F8D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_31_25		225572
+	599029997	Gravel Brake_02	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Gravel Brake_5139C7C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Braking\Gravel Brake_02		162876
+	707959549	WhatsApp Ptt 2024-04-20 at 18_21_07	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.21.07_383AFD6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_21_07		353020
+	739403030	WhatsApp Ptt 2024-04-20 at 18_23_38	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.23.38_08251985.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_23_38		353816
+	777519598	WhatsApp Ptt 2024-04-20 at 18_31_25	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.31.25_C46742F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_31_25		225572
 	778510807	Velociton_driver	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Velociton_driver_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusic\Velociton_driver\Velociton_driver		9136568
-	790683785	WhatsApp Ptt 2024-04-20 at 18_28_12	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.28.12_73F4CC7C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_28_12		213674
-	827670111	WhatsApp Ptt 2024-04-20 at 18_35_41	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.35.41_21B88788.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_35_41		238122
-	834862276	WhatsApp Ptt 2024-04-20 at 18_25_49	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.25.49_70E20665.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_25_49		269728
+	790683785	WhatsApp Ptt 2024-04-20 at 18_28_12	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.28.12_B2F87983.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_28_12		213674
+	823706051	Gravel Brake	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Gravel Brake_FC0B136E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Braking\Gravel Brake		173264
+	827670111	WhatsApp Ptt 2024-04-20 at 18_35_41	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.35.41_901D2DDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_35_41		238122
+	834862276	WhatsApp Ptt 2024-04-20 at 18_25_49	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.25.49_A8988E27.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_25_49		269728
 	844022920	Velociton_driver_with_anouncer	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Velociton_driver_with_anouncer_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusic\Velociton_driver_with_anouncer\Velociton_driver_with_anouncer		9136568
+	848099131	437537__prsvl__braking-on-gravel-bike	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\437537__prsvl__braking-on-gravel-bike_E520D6DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Braking\437537__prsvl__braking-on-gravel-bike		279028
 	866418995	Stole your food	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Stole your food_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Stole your food		308796
-	965060146	WhatsApp Ptt 2024-04-20 at 18_27_10	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.27.10_CE87D5B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_27_10		193552
+	965060146	WhatsApp Ptt 2024-04-20 at 18_27_10	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.27.10_72096B9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_27_10		193552
 	974756713	Velociton_Driver_loop	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\Velociton_Driver_loop_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusic\Velociton_Driver_loop\Velociton_Driver_loop		7561312
-	1046587748	WhatsApp Ptt 2024-04-20 at 18_21_45	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.21.45_83DACA91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_21_45		262138
-	1048321824	WhatsApp Ptt 2024-04-20 at 18_28_34	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.28.34_CB3A83F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_28_34		476026
+	1046587748	WhatsApp Ptt 2024-04-20 at 18_21_45	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.21.45_CFC9F276.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_21_45		262138
+	1048321824	WhatsApp Ptt 2024-04-20 at 18_28_34	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Mac\SFX\WhatsApp Ptt 2024-04-20 at 18.28.34_0ADB8A47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_28_34		476026
 
