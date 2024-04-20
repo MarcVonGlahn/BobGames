@@ -565,7 +565,7 @@ PrefabInstance:
     - target: {fileID: 3557579521856096099, guid: d1f316e72c9f8014e860260cc0e60c46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4300003
+      value: 5.16
       objectReference: {fileID: 0}
     - target: {fileID: 3557579521856096099, guid: d1f316e72c9f8014e860260cc0e60c46,
         type: 3}
@@ -585,17 +585,32 @@ PrefabInstance:
     - target: {fileID: 3557579521856096099, guid: d1f316e72c9f8014e860260cc0e60c46,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000008400806
+      value: 0.000000008400803
       objectReference: {fileID: 0}
     - target: {fileID: 3557579521856096099, guid: d1f316e72c9f8014e860260cc0e60c46,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000018550907
+      value: -0.0000000018550901
       objectReference: {fileID: 0}
     - target: {fileID: 4604193037128348451, guid: d1f316e72c9f8014e860260cc0e60c46,
         type: 3}
       propertyPath: m_Name
       value: MonsterTruck
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673429257739467161, guid: d1f316e72c9f8014e860260cc0e60c46,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853125966535239627, guid: d1f316e72c9f8014e860260cc0e60c46,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384383959657675123, guid: d1f316e72c9f8014e860260cc0e60c46,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6718863176323721513, guid: d1f316e72c9f8014e860260cc0e60c46,
         type: 3}
@@ -646,6 +661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037908141113263807, guid: d1f316e72c9f8014e860260cc0e60c46,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -741,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 959158940016777635, guid: 4b3a3ebbf12fa8e42a81fc01d37e54c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4300003
+      value: 5.16
       objectReference: {fileID: 0}
     - target: {fileID: 959158940016777635, guid: 4b3a3ebbf12fa8e42a81fc01d37e54c0,
         type: 3}
@@ -761,12 +781,12 @@ PrefabInstance:
     - target: {fileID: 959158940016777635, guid: 4b3a3ebbf12fa8e42a81fc01d37e54c0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000008400806
+      value: 0.000000008400803
       objectReference: {fileID: 0}
     - target: {fileID: 959158940016777635, guid: 4b3a3ebbf12fa8e42a81fc01d37e54c0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000018550907
+      value: -0.0000000018550901
       objectReference: {fileID: 0}
     - target: {fileID: 959158940016777635, guid: 4b3a3ebbf12fa8e42a81fc01d37e54c0,
         type: 3}
