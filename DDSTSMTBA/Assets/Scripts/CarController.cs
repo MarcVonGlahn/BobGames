@@ -50,15 +50,15 @@ public class CarController : MonoBehaviour
             StartCoroutine(_baseCar.Explode());
             this.enabled = false;
         }
+
+        GetInput();
     }
 
     private void FixedUpdate()
     {
-        GetInput();
         HandleMotor();
         HandleSteering();
         UpdateWheels();
-        HandleAttack();
     }
 
     private void GetInput()
@@ -126,78 +126,57 @@ public class CarController : MonoBehaviour
 
     private void ChargeAttack()
     {
-        if (isAttacking || isChargingAttack)
-            return;
-
-        attackChargeStartTime = Time.time;
-        isChargingAttack = true;
-        Debug.Log("charging");
-        // TODO start charge anim
-        //      play charge sound
+        if (!isChargingAttack)
+        {
+            attackChargeStartTime = Time.time;
+            isChargingAttack = true;
+            // TODO start charge anim
+            //      play charge sound
+        }
+        else if (isAttacking == true)
+        {
+            isAttacking = false;
+        }
     }
 
     private void TryAttack()
     {
+        if (isAttacking)
+            return;
+
+        isAttacking = true;
+        StartCoroutine(DoAttack());
+    }
+
+    private IEnumerator DoAttack()
+    {
         float curAttackChargeTime = Time.time - attackChargeStartTime;
 
-        if (curAttackChargeTime < attackChargeTime)
-            return;
-
-        isChargingAttack = false;
-        isAttacking = true;
-        Debug.Log("attacking");
-        // TODO activate hit collider
-        //      play attack anim
-        //      play attack sound
-
-        StartCoroutine(EndAttack());
-    }
-
-    private IEnumerator EndAttack()
-    {
-        yield return new WaitForSeconds(0.1f);
-
-        isAttacking = false;
-        Debug.Log("end attack");
-        // TODO deactivate hit collider
-        //      play idle anim
-    }
-
-    private void HandleAttack()
-    {
-        if (!isAttacking)
+        while (curAttackChargeTime < attackChargeTime)
         {
-            if(currentAttackCharge > 0f)
+            if (isAttacking == false)
             {
-                DoAttack();
-                return;
+                yield break;
             }
-            return;
+
+            curAttackChargeTime += Time.deltaTime;
+
+            yield return null;
         }
 
-        if(currentAttackCharge < maxAttackCharge)
+        if (isAttacking)
         {
-            currentAttackCharge += Time.deltaTime;
+            attackHitbox.SetActive(true);
+            // TODO play attack anim
+            //      play attack sound
+
+            yield return new WaitForSeconds(0.1f);
+
+            isAttacking = false;
+            isChargingAttack = false;
+
+            attackHitbox.SetActive(false);
+            // TODO play idle anim 
         }
-
-        isAttacking = false;
-    }
-
-    private void DoAttack()
-    {
-        // Do Attack with current charge
-        StartCoroutine(DoAttack_Routine());
-
-        // Reset Attack Charge
-        currentAttackCharge = 0f;
-    }
-
-
-    private IEnumerator DoAttack_Routine()
-    {
-        attackHitbox.SetActive(true);
-        yield return new WaitForEndOfFrame();
-
-        attackHitbox.SetActive(false);
     }
 }
