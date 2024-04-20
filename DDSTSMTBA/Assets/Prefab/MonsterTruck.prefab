@@ -593,6 +593,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcTag: NPC
+  hitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 73bf686ec37141b44980ed9202b96ec3,
+      type: 2}
+  missEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1c91b99188295834cb1d8e3ce4e1f328,
+      type: 2}
 --- !u!1 &3762550209730895150
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,6 +834,12 @@ MonoBehaviour:
   attackHitbox: {fileID: 3475398109811008564}
   npcTag: NPC
   EXPLODE: 0
+  brakingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f1a8196c97d8a9247a58289c5f0564ad,
+      type: 2}
+  breakingSoundAmbient: {fileID: 0}
 --- !u!114 &1475034517160257759
 MonoBehaviour:
   m_ObjectHideFlags: 0

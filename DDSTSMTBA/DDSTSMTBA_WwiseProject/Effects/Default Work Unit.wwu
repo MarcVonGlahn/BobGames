@@ -8,6 +8,17 @@
 	<GameParameter Name="SideChaining_RTPC" ID="{8A9668D5-B69C-4A97-93E0-A14A47B30651}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="engine_eq" ID="{159BAD67-9044-4ABF-ABA5-05145BE0BCD8}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="273"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="734"/>
+						<Property Name="GainBand2" Type="Real32" Value="-11"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

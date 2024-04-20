@@ -7,6 +7,8 @@ public class Car_EngineSound : MonoBehaviour
     public bool isNPC = false;
     public AK.Wwise.RTPC enginePitchRTPC;
 
+    CarController _carController;
+
     private Rigidbody _rb;
 
     private void Awake()
