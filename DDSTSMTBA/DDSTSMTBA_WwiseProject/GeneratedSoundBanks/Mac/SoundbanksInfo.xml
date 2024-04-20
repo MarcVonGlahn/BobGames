@@ -9,23 +9,52 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CBAE8C57-B6DF-8860-F208-CC5DEAD3CF9D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="23194654" Name="MainBus_Meter_Effect" LibName="Wwise Meter" LibId="8454147"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="23194654"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
+				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3F39E810-291F-AF65-DBA5-B2F58C1A177B}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3F1AC67A-C8F5-F07E-EC2D-1E6F20D51D7C}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
+				<File Id="39508209" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.32.53.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.32.53_82F1E566.wem</CachePath>
+				</File>
+				<File Id="43685897" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>watching.wav</ShortName>
+					<CachePath>SFX/watching_8C127E8F.wem</CachePath>
+				</File>
+				<File Id="168019246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.20.24.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.20.24_2A52D0E8.wem</CachePath>
+				</File>
+				<File Id="179975862" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.30.16.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.30.16_41CD45CE.wem</CachePath>
+				</File>
 				<File Id="198160628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dogs paws.wav</ShortName>
 					<CachePath>SFX/Dogs paws_87563C71.wem</CachePath>
@@ -38,9 +67,17 @@
 					<ShortName>Small penis .wav</ShortName>
 					<CachePath>SFX/Small penis _818F3B66.wem</CachePath>
 				</File>
+				<File Id="363517743" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.24.22.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.24.22_3406ECFD.wem</CachePath>
+				</File>
 				<File Id="371641225" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toiletbrush.wav</ShortName>
 					<CachePath>SFX/Toiletbrush_818F3B66.wem</CachePath>
+				</File>
+				<File Id="408135982" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.22.10.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.22.10_519BD1C7.wem</CachePath>
 				</File>
 				<File Id="452517742" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ugly boyrfriend.wav</ShortName>
@@ -50,17 +87,49 @@
 					<ShortName>Boogers.wav</ShortName>
 					<CachePath>SFX/Boogers_765459C9.wem</CachePath>
 				</File>
+				<File Id="521341349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.35.14.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.35.14_7540AA00.wem</CachePath>
+				</File>
 				<File Id="524208417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Moan.wav</ShortName>
 					<CachePath>SFX/Moan_84381034.wem</CachePath>
+				</File>
+				<File Id="531066773" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.14.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.31.14_AD5B018B.wem</CachePath>
 				</File>
 				<File Id="588112302" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mommy.wav</ShortName>
 					<CachePath>SFX/Mommy_818F3B66.wem</CachePath>
 				</File>
+				<File Id="707959549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.21.07.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.21.07_9A14D710.wem</CachePath>
+				</File>
+				<File Id="739403030" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.23.38.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.23.38_7A539FF3.wem</CachePath>
+				</File>
+				<File Id="777519598" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.25.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.31.25_8E39F8D5.wem</CachePath>
+				</File>
 				<File Id="778510807" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Velociton_driver.wav</ShortName>
 					<CachePath>SFX/Velociton_driver_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="790683785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.28.12.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.28.12_73F4CC7C.wem</CachePath>
+				</File>
+				<File Id="827670111" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.35.41.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.35.41_21B88788.wem</CachePath>
+				</File>
+				<File Id="834862276" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.25.49.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.25.49_70E20665.wem</CachePath>
 				</File>
 				<File Id="844022920" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Velociton_driver_with_anouncer.wav</ShortName>
@@ -70,32 +139,82 @@
 					<ShortName>Stole your food.wav</ShortName>
 					<CachePath>SFX/Stole your food_818F3B66.wem</CachePath>
 				</File>
+				<File Id="965060146" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.27.10.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.27.10_CE87D5B0.wem</CachePath>
+				</File>
+				<File Id="974756713" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Velociton_Driver_loop.wav</ShortName>
+					<CachePath>SFX/Velociton_Driver_loop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1046587748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.21.45.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.21.45_83DACA91.wem</CachePath>
+				</File>
+				<File Id="1048321824" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WhatsApp Ptt 2024-04-20 at 18.28.34.wav</ShortName>
+					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.28.34_CB3A83F5.wem</CachePath>
+				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="23194654" Name="MainBus_Meter_Effect" LibName="Wwise Meter" LibId="8454147"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="OneShot" DurationMin="51.79406" DurationMax="51.79406">
+				<Event Id="548088167" Name="Play_BackgroundMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="778510807"/>
 						<MediaRef Id="844022920"/>
+						<MediaRef Id="974756713"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="3">
+				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="5.139065">
 					<MediaRefs>
+						<MediaRef Id="39508209"/>
+						<MediaRef Id="43685897"/>
+						<MediaRef Id="168019246"/>
+						<MediaRef Id="179975862"/>
 						<MediaRef Id="198160628"/>
 						<MediaRef Id="256618402"/>
 						<MediaRef Id="338812724"/>
+						<MediaRef Id="363517743"/>
 						<MediaRef Id="371641225"/>
+						<MediaRef Id="408135982"/>
 						<MediaRef Id="452517742"/>
 						<MediaRef Id="454256881"/>
+						<MediaRef Id="521341349"/>
 						<MediaRef Id="524208417"/>
+						<MediaRef Id="531066773"/>
 						<MediaRef Id="588112302"/>
+						<MediaRef Id="707959549"/>
+						<MediaRef Id="739403030"/>
+						<MediaRef Id="777519598"/>
+						<MediaRef Id="790683785"/>
+						<MediaRef Id="827670111"/>
+						<MediaRef Id="834862276"/>
 						<MediaRef Id="866418995"/>
+						<MediaRef Id="965060146"/>
+						<MediaRef Id="1046587748"/>
+						<MediaRef Id="1048321824"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 			<Busses>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="23194654"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
+				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A02AEB42-85EB-8114-B2DF-9D58AF9B2841}</FileHash>
+	<FileHash>{52AA915A-351E-31FB-2371-F762F2156EC4}</FileHash>
 </SoundBanksInfo>

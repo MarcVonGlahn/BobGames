@@ -14,8 +14,15 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BACKGROUNDMUSIC = 548088167U;
+        static const AkUniqueID PLAY_HIT = 2960666077U;
         static const AkUniqueID PLAY_SECRETS = 3269136221U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID BACKGROUNDMUSICVOLUME = 2043973872U;
+        static const AkUniqueID SIDECHAINING_RTPC = 1128801621U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

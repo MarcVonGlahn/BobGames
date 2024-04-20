@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2F589471-FFB1-4847-B830-592B9CA730AE}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{2F589471-FFB1-4847-B830-592B9CA730AE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2F589471-FFB1-4847-B830-592B9CA730AE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="test_comp" ID="{0BF65452-3C67-49AA-A05C-B4F6DFCA11E6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3"/>
+				<Effect Name="MainBus_Meter_Effect" ID="{6CB89065-F47B-4439-A76F-87C68863B3F9}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="SideChaining_RTPC" ID="{8A9668D5-B69C-4A97-93E0-A14A47B30651}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

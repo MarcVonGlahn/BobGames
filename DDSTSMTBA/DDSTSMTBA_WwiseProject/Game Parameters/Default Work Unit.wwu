@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{62326644-26CC-4272-A907-EE433E792F9B}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{62326644-26CC-4272-A907-EE433E792F9B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{62326644-26CC-4272-A907-EE433E792F9B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="BackgroundMusicVolume" ID="{4091CC84-9996-46FF-81DE-9FD025453DF5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SideChaining_RTPC" ID="{8A9668D5-B69C-4A97-93E0-A14A47B30651}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
