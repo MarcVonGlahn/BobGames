@@ -9,7 +9,13 @@ public class CarController : MonoBehaviour
     private float horizontalInput, verticalInput;
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
-    private bool isAttacking;
+
+    [SerializeField] private float attackChargeTime = 0.24f;
+    [SerializeField] private Animator animator;
+
+    private bool isAttacking = false;
+    private bool isChargingAttack = false;
+    private float attackChargeStartTime = -1.0f;
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -53,15 +59,15 @@ public class CarController : MonoBehaviour
             StartCoroutine(_baseCar.Explode());
             this.enabled = false;
         }
+
+        GetInput();
     }
 
     private void FixedUpdate()
     {
-        GetInput();
         HandleMotor();
         HandleSteering();
         UpdateWheels();
-        HandleAttack();
     }
 
     private void GetInput()
@@ -82,7 +88,14 @@ public class CarController : MonoBehaviour
 
 
         // Attack Input
-        isAttacking = Input.GetKey(KeyCode.Space);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            ChargeAttack();
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            TryAttack();
+        }
     }
 
     private void HandleMotor()
@@ -126,41 +139,62 @@ public class CarController : MonoBehaviour
     }
 
 
-    private void HandleAttack()
+    private void ChargeAttack()
     {
-        if (!isAttacking)
+        if (!isChargingAttack)
         {
-            if(currentAttackCharge > 0f)
-            {
-                DoAttack();
-                return;
-            }
+            attackChargeStartTime = Time.time;
+            isChargingAttack = true;
+            // TODO play charge sound
+
+            animator.SetBool("isCharging", true);
+        }
+        else if (isAttacking == true)
+        {
+            isAttacking = false;
+        }
+    }
+
+    private void TryAttack()
+    {
+        if (isAttacking)
             return;
-        }
 
-        if(currentAttackCharge < maxAttackCharge)
+        isAttacking = true;
+        StartCoroutine(DoAttack());
+    }
+
+    private IEnumerator DoAttack()
+    {
+        float curAttackChargeTime = Time.time - attackChargeStartTime;
+
+        while (curAttackChargeTime < attackChargeTime)
         {
-            currentAttackCharge += Time.deltaTime;
+            if (isAttacking == false)
+            {
+                yield break;
+            }
+
+            curAttackChargeTime += Time.deltaTime;
+
+            yield return null;
         }
 
-        isAttacking = false;
-    }
+        if (isAttacking)
+        {
+            animator.SetBool("isAttacking", true);
+            attackHitbox.SetActive(true);
+            // TODO play attack sound
 
-    private void DoAttack()
-    {
-        // Do Attack with current charge
-        StartCoroutine(DoAttack_Routine());
+            yield return new WaitForSeconds(0.1f);
 
-        // Reset Attack Charge
-        currentAttackCharge = 0f;
-    }
+            isAttacking = false;
+            isChargingAttack = false;
 
-
-    private IEnumerator DoAttack_Routine()
-    {
-        attackHitbox.SetActive(true);
-        yield return new WaitForEndOfFrame();
-
-        attackHitbox.SetActive(false);
+            attackHitbox.SetActive(false);
+            animator.SetBool("isAttacking", false);
+            animator.SetBool("isCharging", false);
+            // TODO play idle anim 
+        }
     }
 }
