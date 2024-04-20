@@ -9,7 +9,12 @@ public class CarController : MonoBehaviour
     private float horizontalInput, verticalInput;
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
-    private bool isAttacking;
+
+    [SerializeField] private float attackChargeTime = 0.24f;
+
+    private bool isAttacking = false;
+    private bool isChargingAttack = false;
+    private float attackChargeStartTime = -1.0f;
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -68,7 +73,14 @@ public class CarController : MonoBehaviour
         isBreaking = Input.GetKey(KeyCode.E);
 
         // Attack Input
-        isAttacking = Input.GetKey(KeyCode.Space);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            ChargeAttack();
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            TryAttack();
+        }
     }
 
     private void HandleMotor()
@@ -111,6 +123,45 @@ public class CarController : MonoBehaviour
         wheelTransform.position = pos;
     }
 
+
+    private void ChargeAttack()
+    {
+        if (isAttacking || isChargingAttack)
+            return;
+
+        attackChargeStartTime = Time.time;
+        isChargingAttack = true;
+        Debug.Log("charging");
+        // TODO start charge anim
+        //      play charge sound
+    }
+
+    private void TryAttack()
+    {
+        float curAttackChargeTime = Time.time - attackChargeStartTime;
+
+        if (curAttackChargeTime < attackChargeTime)
+            return;
+
+        isChargingAttack = false;
+        isAttacking = true;
+        Debug.Log("attacking");
+        // TODO activate hit collider
+        //      play attack anim
+        //      play attack sound
+
+        StartCoroutine(EndAttack());
+    }
+
+    private IEnumerator EndAttack()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        isAttacking = false;
+        Debug.Log("end attack");
+        // TODO deactivate hit collider
+        //      play idle anim
+    }
 
     private void HandleAttack()
     {
