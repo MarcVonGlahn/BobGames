@@ -9,7 +9,7 @@ public class AttackHitbox : MonoBehaviour
     {
         if(other.gameObject.tag == npcTag)
         {
-            other.gameObject.GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
+            other.gameObject.GetComponent<AI_Car>().TakeHit();
         }
     }
 }

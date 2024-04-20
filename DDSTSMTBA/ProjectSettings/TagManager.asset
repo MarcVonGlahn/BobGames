@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - NPC
   - Test
   layers:
   - Default
@@ -12,31 +13,6 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   m_SortingLayers:
   - name: Default
