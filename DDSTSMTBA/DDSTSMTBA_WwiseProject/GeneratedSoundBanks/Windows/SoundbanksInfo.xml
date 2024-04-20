@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{299E9FF0-388B-95F6-C076-DFEA4657A5CE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0779CDB6-A976-10E9-04C4-E779D02CB956}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -33,9 +33,10 @@
 			<GameParameters>
 				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
+				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{B44FE5A3-8763-AA81-13D8-863359CDA551}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{123E9C08-08FF-1851-90ED-77A614F79FC9}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -46,6 +47,10 @@
 				<File Id="43685897" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>watching.wav</ShortName>
 					<CachePath>SFX/watching_8C127E8F.wem</CachePath>
+				</File>
+				<File Id="51158736" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel Brake.wav</ShortName>
+					<CachePath>SFX/Gravel Brake_D1A23CC5.wem</CachePath>
 				</File>
 				<File Id="168019246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.20.24.wav</ShortName>
@@ -75,6 +80,10 @@
 					<ShortName>Toiletbrush.wav</ShortName>
 					<CachePath>SFX/Toiletbrush_818F3B66.wem</CachePath>
 				</File>
+				<File Id="407818786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RaceCar_EngineSound_03.wav</ShortName>
+					<CachePath>SFX/RaceCar_EngineSound_03_BE68BFBD.wem</CachePath>
+				</File>
 				<File Id="408135982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.22.10.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.22.10_519BD1C7.wem</CachePath>
@@ -103,6 +112,10 @@
 					<ShortName>Mommy.wav</ShortName>
 					<CachePath>SFX/Mommy_818F3B66.wem</CachePath>
 				</File>
+				<File Id="599029997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel Brake.wav</ShortName>
+					<CachePath>SFX/Gravel Brake_982EA851.wem</CachePath>
+				</File>
 				<File Id="707959549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.21.07.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.21.07_9A14D710.wem</CachePath>
@@ -123,6 +136,10 @@
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.28.12.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.28.12_73F4CC7C.wem</CachePath>
 				</File>
+				<File Id="823706051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel Brake.wav</ShortName>
+					<CachePath>SFX/Gravel Brake_B73D64F5.wem</CachePath>
+				</File>
 				<File Id="827670111" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.35.41.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.35.41_21B88788.wem</CachePath>
@@ -134,6 +151,10 @@
 				<File Id="844022920" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Velociton_driver_with_anouncer.wav</ShortName>
 					<CachePath>SFX/Velociton_driver_with_anouncer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="848099131" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>437537__prsvl__braking-on-gravel-bike.wav</ShortName>
+					<CachePath>SFX/437537__prsvl__braking-on-gravel-bike_D93C7E95.wem</CachePath>
 				</File>
 				<File Id="866418995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stole your food.wav</ShortName>
@@ -169,7 +190,20 @@
 						<MediaRef Id="974756713"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4061097622" Name="Play_Braking" DurationType="OneShot" DurationMin="0.84031415" DurationMax="1.4527667">
+					<MediaRefs>
+						<MediaRef Id="51158736"/>
+						<MediaRef Id="599029997"/>
+						<MediaRef Id="823706051"/>
+						<MediaRef Id="848099131"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2957517431" Name="Play_RaceCar_EngineSound" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="407818786"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="5.139065">
 					<MediaRefs>
 						<MediaRef Id="39508209"/>
@@ -213,8 +247,9 @@
 			<GameParameters>
 				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
+				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5F6A4B4D-8644-F4D0-32F8-A63478A8E8A5}</FileHash>
+	<FileHash>{7DD377DC-2907-2B33-279A-46BF338CCF97}</FileHash>
 </SoundBanksInfo>
