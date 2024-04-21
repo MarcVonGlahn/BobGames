@@ -148,11 +148,9 @@ public class AI_Car : MonoBehaviour
             target.GetComponentInParent<carController_v2>().isChased = false;
         }
 
-        Debug.Log("Playing secret");
         baseCar.Explode();
         GetComponent<SplineAnimate>().Pause();
-
-        //GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
+        GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
         //explode here
     }
 }

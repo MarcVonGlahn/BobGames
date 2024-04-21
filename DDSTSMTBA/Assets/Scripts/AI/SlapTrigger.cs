@@ -14,6 +14,13 @@ public class SlapTrigger : MonoBehaviour
 
     public Animator slapAnimator;
 
+    public AK.Wwise.Event hitEvent;
+    public AK.Wwise.Event missEvent;
+
+    private AkAmbient ambient;
+    private AkGameObj akGO;
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (!aiCar.inAction)
@@ -45,17 +52,28 @@ public class SlapTrigger : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
 
+
         if (_inTriggerZone)
         {
             try
             {
+
                 hitTarget.GetComponent<AI_Car>().TakeHit();
+                hitTarget.gameObject.GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
             }
             catch
             {
 
             }
+            ambient.data = hitEvent;
+            hitEvent.Post(gameObject);
+
             Destroy(hitTarget);
+        }
+        else
+        {
+            ambient.data = missEvent;
+            missEvent.Post(gameObject);
         }
 
         slapAnimator.SetBool("isAttacking", false);
