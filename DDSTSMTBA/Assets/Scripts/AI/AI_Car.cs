@@ -25,6 +25,9 @@ public class AI_Car : MonoBehaviour
     public bool isChasingPlayer;
 
     public BaseCar baseCar;
+
+    public bool isDead;
+
     void Awake()
     {
         _agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -147,6 +150,8 @@ public class AI_Car : MonoBehaviour
         {
             target.GetComponentInParent<carController_v2>().isChased = false;
         }
+
+        isDead = true;
 
         baseCar.Explode();
         GetComponent<SplineAnimate>().Pause();

@@ -26,6 +26,8 @@ public class carController_v2 : MonoBehaviour
 
     public bool isChased;
 
+    public bool isDead
+        ;
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -147,5 +149,10 @@ public class carController_v2 : MonoBehaviour
             animator.SetBool("isCharging", false);
             // TODO play idle anim 
         }
+    }
+
+    public void TakeHit()
+    {
+        isDead = true;
     }
 }

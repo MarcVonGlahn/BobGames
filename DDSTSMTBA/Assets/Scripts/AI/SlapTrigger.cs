@@ -57,7 +57,6 @@ public class SlapTrigger : MonoBehaviour
         {
             try
             {
-
                 hitTarget.GetComponent<AI_Car>().TakeHit();
                 hitTarget.gameObject.GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
             }
@@ -65,6 +64,16 @@ public class SlapTrigger : MonoBehaviour
             {
 
             }
+
+            try
+            {
+                hitTarget.GetComponent<carController_v2>().TakeHit();
+            }
+            catch
+            {
+
+            }
+
             ambient.data = hitEvent;
             hitEvent.Post(gameObject);
 
