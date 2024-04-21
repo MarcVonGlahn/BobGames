@@ -5,5 +5,16 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Image blackOutPanel;
+    public Animator animator;
+
+    public void DoWinAnimation()
+    {
+        animator.SetTrigger("Win_Trigger");
+    }
+
+
+    public void DoLoseAnimation()
+    {
+        animator.SetTrigger("Lose_Trigger");
+    }
 }
