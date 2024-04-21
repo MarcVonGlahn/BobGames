@@ -6,6 +6,8 @@ using UnityEngine.Splines;
 
 public class AI_Car : MonoBehaviour
 {
+    [SerializeField] private GameObject explosionParticles;
+
     private UnityEngine.AI.NavMeshAgent _agent;
     private SplineAnimate splineAnimation;
 
@@ -131,6 +133,9 @@ public class AI_Car : MonoBehaviour
     public void TakeHit()
     {
         Debug.Log("Playing secret");
+        GameObject explosionOfDoom = Instantiate(explosionParticles, transform.position, transform.rotation);
+        explosionOfDoom.transform.localScale *= 2.0f;
+        explosionOfDoom.transform.parent = transform;
         baseCar.Explode();
         GetComponent<SplineAnimate>().Pause();
 
