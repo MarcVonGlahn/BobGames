@@ -36,7 +36,7 @@
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{57A6AC5B-C75D-D93A-72FD-5D1345A88668}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{8BCEE7B5-5311-5387-917A-A2331B1A0931}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -52,10 +52,6 @@
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.32.53.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.32.53_B98B60F9.wem</CachePath>
 				</File>
-				<File Id="43685897" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>watching.wav</ShortName>
-					<CachePath>SFX/watching_6CE193ED.wem</CachePath>
-				</File>
 				<File Id="51158736" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel Brake.wav</ShortName>
 					<CachePath>SFX/Gravel Brake_C383C550.wem</CachePath>
@@ -70,15 +66,15 @@
 				</File>
 				<File Id="198160628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dogs paws.wav</ShortName>
-					<CachePath>SFX/Dogs paws_87563C71.wem</CachePath>
+					<CachePath>SFX/Dogs paws_BB7C3BA6.wem</CachePath>
 				</File>
-				<File Id="256618402" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Big penis .wav</ShortName>
-					<CachePath>SFX/Big penis _818F3B66.wem</CachePath>
+				<File Id="200401919" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Haircut.wav</ShortName>
+					<CachePath>SFX/Haircut_00D44142.wem</CachePath>
 				</File>
 				<File Id="338812724" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small penis .wav</ShortName>
-					<CachePath>SFX/Small penis _818F3B66.wem</CachePath>
+					<CachePath>SFX/Small penis _9F94363A.wem</CachePath>
 				</File>
 				<File Id="363517743" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.24.22.wav</ShortName>
@@ -86,7 +82,7 @@
 				</File>
 				<File Id="371641225" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toiletbrush.wav</ShortName>
-					<CachePath>SFX/Toiletbrush_818F3B66.wem</CachePath>
+					<CachePath>SFX/Toiletbrush_48EB6648.wem</CachePath>
 				</File>
 				<File Id="407818786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RaceCar_EngineSound_03.wav</ShortName>
@@ -98,11 +94,11 @@
 				</File>
 				<File Id="452517742" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ugly boyrfriend.wav</ShortName>
-					<CachePath>SFX/Ugly boyrfriend_1EC7DDC1.wem</CachePath>
+					<CachePath>SFX/Ugly boyrfriend_D8DF7CF3.wem</CachePath>
 				</File>
 				<File Id="454256881" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boogers.wav</ShortName>
-					<CachePath>SFX/Boogers_765459C9.wem</CachePath>
+					<CachePath>SFX/Boogers_7209C4F8.wem</CachePath>
 				</File>
 				<File Id="521341349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.35.14.wav</ShortName>
@@ -110,11 +106,15 @@
 				</File>
 				<File Id="524208417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Moan.wav</ShortName>
-					<CachePath>SFX/Moan_84381034.wem</CachePath>
+					<CachePath>SFX/Moan_12D0F908.wem</CachePath>
 				</File>
 				<File Id="531066773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.14.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.31.14_BBE1293B.wem</CachePath>
+				</File>
+				<File Id="535907001" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>I don't like your food.wav</ShortName>
+					<CachePath>SFX/I don't like your food_9EE6812A.wem</CachePath>
 				</File>
 				<File Id="574845993" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>lose_jingle_1.wav</ShortName>
@@ -130,11 +130,19 @@
 				</File>
 				<File Id="588112302" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mommy.wav</ShortName>
-					<CachePath>SFX/Mommy_818F3B66.wem</CachePath>
+					<CachePath>SFX/Mommy_DB7F054A.wem</CachePath>
 				</File>
 				<File Id="599029997" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel Brake.wav</ShortName>
 					<CachePath>SFX/Gravel Brake_5139C7C5.wem</CachePath>
+				</File>
+				<File Id="614952438" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chat gpt.wav</ShortName>
+					<CachePath>SFX/Chat gpt_552B018A.wem</CachePath>
+				</File>
+				<File Id="661695416" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Big penis.wav</ShortName>
+					<CachePath>SFX/Big penis_AD283A06.wem</CachePath>
 				</File>
 				<File Id="672839098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slap_woosh.wav</ShortName>
@@ -186,7 +194,7 @@
 				</File>
 				<File Id="866418995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stole your food.wav</ShortName>
-					<CachePath>SFX/Stole your food_818F3B66.wem</CachePath>
+					<CachePath>SFX/Stole your food_D3272944.wem</CachePath>
 				</File>
 				<File Id="965060146" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.27.10.wav</ShortName>
@@ -254,14 +262,13 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="1.1910995" DurationMax="5.139065">
+				<Event Id="3269136221" Name="Play_Secrets" DurationType="OneShot" DurationMin="0.8750113" DurationMax="5.139065">
 					<MediaRefs>
 						<MediaRef Id="39508209"/>
-						<MediaRef Id="43685897"/>
 						<MediaRef Id="168019246"/>
 						<MediaRef Id="179975862"/>
 						<MediaRef Id="198160628"/>
-						<MediaRef Id="256618402"/>
+						<MediaRef Id="200401919"/>
 						<MediaRef Id="338812724"/>
 						<MediaRef Id="363517743"/>
 						<MediaRef Id="371641225"/>
@@ -271,7 +278,10 @@
 						<MediaRef Id="521341349"/>
 						<MediaRef Id="524208417"/>
 						<MediaRef Id="531066773"/>
+						<MediaRef Id="535907001"/>
 						<MediaRef Id="588112302"/>
+						<MediaRef Id="614952438"/>
+						<MediaRef Id="661695416"/>
 						<MediaRef Id="707959549"/>
 						<MediaRef Id="739403030"/>
 						<MediaRef Id="777519598"/>
@@ -313,5 +323,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{24594E67-A5B2-8DD4-4613-A6166F610853}</FileHash>
+	<FileHash>{D0E46195-B572-564C-BF1E-82F09DC04265}</FileHash>
 </SoundBanksInfo>

@@ -17,8 +17,6 @@ public class WwiseAudio_PlaySecret : MonoBehaviour
 
     public void PlaySecret()
     {
-        Debug.Log(gameObject.name);
-
         _ambient.data.Post(gameObject);
     }
 }
