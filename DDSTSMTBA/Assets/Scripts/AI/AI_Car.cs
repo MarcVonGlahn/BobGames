@@ -15,21 +15,31 @@ public class AI_Car : MonoBehaviour
 
     public Transform target;
 
-    public float speed;
-
     public float initalPeace = 2.0f;
 
     public bool inAction = true;
     public bool goingToStart;
     private bool _samplePosition = true;
 
+    public bool EXPLODE;
+
+
+    public BaseCar baseCar;
     void Awake()
     {
         _agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        _agent.speed = speed;
         splineAnimation = GetComponent<SplineAnimate>();
 
         StartCoroutine(InitialPeaceWait());
+    }
+
+    private void FixedUpdate()
+    {
+        if (EXPLODE)
+        {
+            StartCoroutine(baseCar.Explode());
+            this.enabled = false;
+        }
     }
 
     private IEnumerator InitialPeaceWait()
@@ -46,6 +56,7 @@ public class AI_Car : MonoBehaviour
     {
         if (chasingState == ChasingState.Chaser)
         {
+            splineAnimation.Pause();
             if (target == null)
             {
                 chasingState = ChasingState.None;
@@ -81,8 +92,16 @@ public class AI_Car : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.CompareTag("NPC"))
         {
+            // 80% chance they dont fight
+            if (true)
+            //if (Random.Range(0.0f,1.0f) < 0.8f)
+            {
+                return;
+            }
+
             if (other.GetComponent<AI_Car>().inAction)
                 return;
 
@@ -101,15 +120,20 @@ public class AI_Car : MonoBehaviour
         }
         else if (other.CompareTag("Player"))
         {
+            Debug.Log("Collided with player");
             chasingState = ChasingState.Chaser;
             target = other.transform;
             inAction = true;
+            splineAnimation.Pause();
         }
     }
 
     public void TakeHit()
     {
         Debug.Log("Playing secret");
+        baseCar.Explode();
+        GetComponent<SplineAnimate>().Pause();
+
         //GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
         //explode here
     }
