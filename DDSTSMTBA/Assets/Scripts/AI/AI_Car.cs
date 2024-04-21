@@ -155,8 +155,8 @@ public class AI_Car : MonoBehaviour
 
         baseCar.Explode();
         GetComponent<SplineAnimate>().Pause();
-        GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
-        //explode here
+        // GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
+        // explode here
     }
 }
 

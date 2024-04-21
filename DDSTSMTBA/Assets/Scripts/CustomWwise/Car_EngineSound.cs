@@ -18,8 +18,6 @@ public class Car_EngineSound : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_rb.velocity.magnitude);
-
         enginePitchRTPC.SetValue(gameObject, _rb.velocity.magnitude);
     }
 }

@@ -121,6 +121,14 @@ MonoBehaviour:
   triggerTime: 1
   aiCar: {fileID: 2362609784867290295}
   slapAnimator: {fileID: 5297011285169326411}
+  hitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  missEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &288885423000201772
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +390,7 @@ GameObject:
   - component: {fileID: 4705010125344235211}
   - component: {fileID: 311864386083087933}
   - component: {fileID: 8888176310872691290}
-  - component: {fileID: 1631758724230917658}
+  - component: {fileID: 5122628565483368099}
   m_Layer: 6
   m_Name: Car
   m_TagString: NPC
@@ -628,7 +636,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd98cf17086fe594a9b802c23f9a8671,
+      type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -664,7 +673,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1631758724230917658
+--- !u!114 &5122628565483368099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -673,31 +682,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3377897187149459831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a2e97454e8db1244b9ff7a2ee05dd45, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d41a78973190a84fa5c39de2124ec77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
+  isNPC: 0
+  enginePitchRTPC:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
+    WwiseObjectReference: {fileID: 11400000, guid: 562073c64b7cb5f48aa7281b187c21ef,
+      type: 2}
 --- !u!1 &3530103827130773452
 GameObject:
   m_ObjectHideFlags: 0
