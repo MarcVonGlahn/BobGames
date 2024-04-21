@@ -154,5 +154,7 @@ public class carController_v2 : MonoBehaviour
     public void TakeHit()
     {
         isDead = true;
+
+
     }
 }

@@ -73,7 +73,8 @@ public class SlapTrigger : MonoBehaviour
 
             try
             {
-                hitTarget.GetComponent<carController_v2>().TakeHit();
+                hitTarget.GetComponentInParent<carController_v2>().TakeHit();
+                Debug.Log("Got Hit", gameObject);
             }
             catch
             {

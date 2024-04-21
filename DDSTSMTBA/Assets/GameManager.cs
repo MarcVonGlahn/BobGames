@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public carController_v2 player;
 
+    private bool lockGameEnd = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -22,15 +24,23 @@ public class GameManager : MonoBehaviour
                 carsLeft = true;
             }
         }
-        
+
         if (!carsLeft)
         {
-            uiManager.DoWinAnimation();
+            if (!lockGameEnd)
+            {
+                uiManager.DoWinAnimation();
+                lockGameEnd = true;
+            }
         }
 
         if (player.isDead)
         {
-            uiManager.DoLoseAnimation();
+            if (!lockGameEnd)
+            {
+                uiManager.DoLoseAnimation();
+                lockGameEnd = true;
+            }
         }
     }
 }
