@@ -16,9 +16,12 @@ namespace AK
         static const AkUniqueID PLAY_BACKGROUNDMUSIC = 548088167U;
         static const AkUniqueID PLAY_BRAKING = 4061097622U;
         static const AkUniqueID PLAY_HIT = 2960666077U;
+        static const AkUniqueID PLAY_LOSE_FART = 2849851413U;
         static const AkUniqueID PLAY_MISS = 1631400290U;
         static const AkUniqueID PLAY_RACECAR_ENGINESOUND = 2957517431U;
         static const AkUniqueID PLAY_SECRETS = 3269136221U;
+        static const AkUniqueID PLAY_WIN_JINGLE = 2445091216U;
+        static const AkUniqueID STOP_BACKGROUNDMUSIC = 2137060797U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

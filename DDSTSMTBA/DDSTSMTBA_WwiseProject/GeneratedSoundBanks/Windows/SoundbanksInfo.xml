@@ -36,13 +36,17 @@
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{B68390D4-D436-2A9C-D199-F14BB9B1D335}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{FBD64F1F-E0F7-C7FE-E210-130CF0096595}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
 				<File Id="9921773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slap.wav</ShortName>
 					<CachePath>SFX/Slap_818F3B66.wem</CachePath>
+				</File>
+				<File Id="37663742" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Win jingle.wav</ShortName>
+					<CachePath>SFX/Win jingle_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="39508209" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.32.53.wav</ShortName>
@@ -111,6 +115,14 @@
 				<File Id="531066773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.14.wav</ShortName>
 					<CachePath>SFX/WhatsApp Ptt 2024-04-20 at 18.31.14_BBE1293B.wem</CachePath>
+				</File>
+				<File Id="574845993" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lose_jingle_1.wav</ShortName>
+					<CachePath>SFX/lose_jingle_1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="575608289" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Lose_fart.wav</ShortName>
+					<CachePath>SFX/Lose_fart_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="579947419" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Punch long grate.wav</ShortName>
@@ -222,6 +234,11 @@
 						<MediaRef Id="767979874"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2849851413" Name="Play_Lose_fart" DurationType="OneShot" DurationMin="3.1250112" DurationMax="3.1250112">
+					<MediaRefs>
+						<MediaRef Id="575608289"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1631400290" Name="Play_Miss" DurationType="OneShot" DurationMin="0.13111112" DurationMax="0.13111112">
 					<MediaRefs>
 						<MediaRef Id="672839098"/>
@@ -267,6 +284,18 @@
 						<MediaRef Id="1048321824"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2445091216" Name="Play_Win_jingle" DurationType="OneShot" DurationMin="8.520725" DurationMax="8.520725">
+					<MediaRefs>
+						<MediaRef Id="37663742"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2137060797" Name="Stop_BackgroundMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="778510807"/>
+						<MediaRef Id="844022920"/>
+						<MediaRef Id="974756713"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus">
@@ -284,5 +313,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{805DAFDF-4399-1A10-68A6-08151635E6C3}</FileHash>
+	<FileHash>{E592B50E-E02D-03B6-A7DE-FF9D9BDD3344}</FileHash>
 </SoundBanksInfo>

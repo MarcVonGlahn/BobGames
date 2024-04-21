@@ -487,6 +487,175 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicSegment>
+				<MusicSegment Name="lose_jingle" ID="{E58450E9-A5B2-437B-ADD6-8D525BBCEF1F}" ShortID="11643217">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="5034.98866213152"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="lose_jingle_1" ID="{AED5BE29-2A89-4C71-A118-AF0A87C0DB29}" ShortID="941475580">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{8CC56255-4280-4B29-B18A-996F2212152A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lose_jingle_1" ID="{E56B562C-10E8-4292-A8E4-6C50629065AF}">
+									<Language>SFX</Language>
+									<AudioFile>lose_jingle_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="574845993"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{BB58034F-DFA5-41A1-B15E-9CFB599286E3}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="lose_jingle_1" ID="{FDB33633-6D16-40E3-BEDC-D25F3A310475}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="5034.98866213152"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="lose_jingle_1" ID="{E56B562C-10E8-4292-A8E4-6C50629065AF}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{22859054-9302-4179-B469-7D4FC88ECCB8}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{1F397B65-CA24-459B-896A-09325C6D64FC}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="5034.98866213152"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="Lose_fart" ID="{3B690857-5EC4-407C-8047-8D7F0C663017}" ShortID="821135160">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F7FBBE5D-51A1-4FF2-9F8F-A230C3A6EDE6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Lose_fart" ID="{BD69915B-F8E2-4D64-BEAE-F9651F3837BB}" ShortID="781468294">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56FCBF93-5651-41B7-89D1-AA7D3DD7258F}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{94335F95-97E2-4892-B3F5-D5944C7C86A9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lose_fart" ID="{7290B7E0-2B67-431A-8A8B-7F2D778F7515}">
+									<Language>SFX</Language>
+									<AudioFile>Lose_fart.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="575608289"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{92247F1C-37E8-4482-912A-C7DCD7ABFD8C}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Lose_fart" ID="{16DB4BF8-2414-4742-A776-63688AFDAF59}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="3125.01133786848"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Lose_fart" ID="{7290B7E0-2B67-431A-8A8B-7F2D778F7515}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{FC4E974F-BDB0-4536-B1DB-F80A2707B15F}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{DF4E0B90-0E58-4E3F-898A-A0590F7B1827}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="3125.01133786848"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

@@ -65,7 +65,8 @@ MonoBehaviour:
   playLosingSoundEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 50a3d6ddad99c3a48a7df73bb50bb13e,
+      type: 2}
 --- !u!114 &1117424501177359197
 MonoBehaviour:
   m_ObjectHideFlags: 0
