@@ -39,7 +39,14 @@ public class SlapTrigger : MonoBehaviour
 
         if (_inTriggerZone)
         {
-            hitTarget.GetComponent<AI_Car>().TakeHit();
+            try
+            {
+                hitTarget.GetComponent<AI_Car>().TakeHit();
+            }
+            catch
+            {
+
+            }
             Destroy(hitTarget);
         }
     }

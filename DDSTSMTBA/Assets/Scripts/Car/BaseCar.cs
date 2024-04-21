@@ -30,7 +30,7 @@ public class BaseCar : MonoBehaviour
         //GetComponent<Rigidbody>().mass = 5.0f;
 
         frame.AddComponent<Rigidbody>();
-        frame.GetComponent<BoxCollider>().enabled = true;
+        //frame.GetComponent<BoxCollider>().enabled = true;
 
         ExplodeRoof();
         ExplodeWheels(true);
@@ -43,7 +43,7 @@ public class BaseCar : MonoBehaviour
         //forceVector += new Vector3(Random.Range(-roofHorizontalForce, 0), 0, Random.Range(-roofHorizontalForce, roofHorizontalForce));
         forceVector *= force;
 
-        top.GetComponent<BoxCollider>().enabled = true;
+        //top.GetComponent<BoxCollider>().enabled = true;
         top.AddComponent<Rigidbody>();
         top.GetComponent<Rigidbody>().AddForce(forceVector, ForceMode.Impulse);
         //top.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(-torque, torque), Random.Range(-torque, torque), Random.Range(-torque, torque)));
@@ -61,7 +61,7 @@ public class BaseCar : MonoBehaviour
 
         foreach (Transform wheel in wheels)
         {
-            wheel.GetComponent<SphereCollider>().enabled = true;
+            //wheel.GetComponent<SphereCollider>().enabled = true;
             wheel.AddComponent<Rigidbody>();
             wheel.GetComponent<Rigidbody>().mass = 3.5f;
             wheel.GetComponent<Rigidbody>().AddForce(forceVector, ForceMode.Impulse);
