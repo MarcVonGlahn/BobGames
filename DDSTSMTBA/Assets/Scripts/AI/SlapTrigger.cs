@@ -21,6 +21,12 @@ public class SlapTrigger : MonoBehaviour
     private AkGameObj akGO;
 
 
+    private void Start()
+    {
+        ambient = GetComponentInParent<AkAmbient>();
+    }
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (!aiCar.inAction)

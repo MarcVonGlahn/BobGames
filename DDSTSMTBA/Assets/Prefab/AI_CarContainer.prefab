@@ -124,11 +124,13 @@ MonoBehaviour:
   hitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 73bf686ec37141b44980ed9202b96ec3,
+      type: 2}
   missEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1c91b99188295834cb1d8e3ce4e1f328,
+      type: 2}
 --- !u!1 &288885423000201772
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,7 +791,7 @@ GameObject:
   - component: {fileID: 5439575117054267814}
   m_Layer: 6
   m_Name: Body
-  m_TagString: NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

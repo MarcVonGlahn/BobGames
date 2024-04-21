@@ -93,6 +93,7 @@ MonoBehaviour:
   animator: {fileID: 8681351741071251503}
   attackHitbox: {fileID: 6565267359695263426}
   isChased: 0
+  isDead: 0
 --- !u!114 &4458500883923394994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,7 +930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2712412033487588588
 Transform:
   m_ObjectHideFlags: 0

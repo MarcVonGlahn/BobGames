@@ -47,7 +47,17 @@ public class AttackHitbox : MonoBehaviour
 
         if(other.gameObject.tag == npcTag)
         {
-            other.gameObject.GetComponent<AI_Car>().TakeHit();
+            if (other.gameObject.TryGetComponent<AI_Car>(out AI_Car component) )
+            {
+                component.TakeHit();
+            }
+            else
+            {
+                Debug.Log("no ai car");
+            }
+            //other.gameObject.GetComponent<AI_Car>().TakeHit();
+            //Debug.Log("Here", other.gameObject);
+
             other.gameObject.GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
 
             _hasHitSomething = true;
