@@ -24,6 +24,8 @@ public class carController_v2 : MonoBehaviour
     private bool isChargingAttack = false;
     private float attackChargeStartTime = -1.0f;
 
+    public bool isChased;
+
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();

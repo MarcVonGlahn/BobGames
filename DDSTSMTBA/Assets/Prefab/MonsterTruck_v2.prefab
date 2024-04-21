@@ -89,6 +89,7 @@ MonoBehaviour:
   attackChargeTime: 0.45
   animator: {fileID: 8681351741071251503}
   attackHitbox: {fileID: 6565267359695263426}
+  isChased: 0
 --- !u!1 &233291849967961873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9c82fe27e17d5184d95431a6d326bfca, type: 2}
+      objectReference: {fileID: 2100000, guid: 02f01c16200e94244b9d1295e2bc0e8c, type: 2}
     - target: {fileID: -1461304994638716399, guid: ea89da27cabc4104aa6a48751e195cfe,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

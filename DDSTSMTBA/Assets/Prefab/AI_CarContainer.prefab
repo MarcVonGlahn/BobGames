@@ -118,8 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518863fbb79f1d5479a1a87a1ff733ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerTime: 3
+  triggerTime: 1
   aiCar: {fileID: 2362609784867290295}
+  slapAnimator: {fileID: 5297011285169326411}
 --- !u!1 &288885423000201772
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,8 +380,8 @@ GameObject:
   - component: {fileID: 8963565003026932766}
   - component: {fileID: 5670127353413782263}
   - component: {fileID: 4705010125344235211}
-  - component: {fileID: 8051952712202278920}
   - component: {fileID: 311864386083087933}
+  - component: {fileID: 8888176310872691290}
   m_Layer: 6
   m_Name: Car
   m_TagString: NPC
@@ -396,8 +397,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3377897187149459831}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0035385496, y: 0.86058193, z: -0.008161616, w: 0.5092344}
-  m_LocalPosition: {x: 12.155057, y: 2.6292357, z: 31.733938}
+  m_LocalRotation: {x: -0.03323933, y: -0.0019524617, z: 0.023367587, w: 0.99917233}
+  m_LocalPosition: {x: -29.48922, y: 1.4000001, z: -39.990356}
   m_LocalScale: {x: 3.79, y: 3.79, z: 3.79}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -486,11 +487,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
+  m_Speed: 15
   m_Acceleration: 70
   avoidancePriority: 50
   m_AngularSpeed: 300
-  m_StoppingDistance: 1
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -516,6 +517,7 @@ MonoBehaviour:
   inAction: 0
   goingToStart: 0
   EXPLODE: 0
+  isChasingPlayer: 0
   baseCar: {fileID: 1666589283259144204}
 --- !u!114 &631555321754047709
 MonoBehaviour:
@@ -533,7 +535,7 @@ MonoBehaviour:
   m_PlayOnAwake: 1
   m_LoopMode: 1
   m_Method: 1
-  m_Duration: 12.450453
+  m_Duration: 13.4187355
   m_MaxSpeed: 25
   m_EasingMode: 0
   m_AlignmentMode: 1
@@ -605,28 +607,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 99d207e8d15cb4146bd1844097e035cd,
       type: 2}
---- !u!114 &8051952712202278920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3377897187149459831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fbc770f206bee48830dbc760bd6137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!114 &311864386083087933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +641,28 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!114 &8888176310872691290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377897187149459831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fbc770f206bee48830dbc760bd6137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &3530103827130773452
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +758,7 @@ GameObject:
   - component: {fileID: 5439575117054267814}
   m_Layer: 6
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

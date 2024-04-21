@@ -22,7 +22,7 @@ public class AI_Car : MonoBehaviour
     private bool _samplePosition = true;
 
     public bool EXPLODE;
-
+    public bool isChasingPlayer;
 
     public BaseCar baseCar;
     void Awake()
@@ -120,7 +120,20 @@ public class AI_Car : MonoBehaviour
         }
         else if (other.CompareTag("Player"))
         {
-            Debug.Log("Collided with player");
+            try
+            {
+                if (other.transform.GetComponentInParent<carController_v2>().isChased)
+                    return;
+            }
+            catch
+            {
+                return;
+            }
+
+
+            other.transform.GetComponentInParent<carController_v2>().isChased = true;
+
+            isChasingPlayer = true;
             chasingState = ChasingState.Chaser;
             target = other.transform;
             inAction = true;
@@ -130,6 +143,11 @@ public class AI_Car : MonoBehaviour
 
     public void TakeHit()
     {
+        if (isChasingPlayer)
+        {
+            target.GetComponentInParent<carController_v2>().isChased = false;
+        }
+
         Debug.Log("Playing secret");
         baseCar.Explode();
         GetComponent<SplineAnimate>().Pause();
