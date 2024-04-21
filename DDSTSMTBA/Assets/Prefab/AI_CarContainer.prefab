@@ -521,6 +521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chasingState: 2
+  explosionParticles: {fileID: 7494441540322359442, guid: 66902a493ebfa8e47ab119d9a2390110,
+    type: 3}
   target: {fileID: 0}
   initalPeace: 2
   inAction: 0
@@ -528,6 +530,7 @@ MonoBehaviour:
   EXPLODE: 0
   isChasingPlayer: 0
   baseCar: {fileID: 1666589283259144204}
+  isDead: 0
 --- !u!114 &631555321754047709
 MonoBehaviour:
   m_ObjectHideFlags: 0

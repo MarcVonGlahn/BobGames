@@ -11,6 +11,8 @@ public class AI_Car : MonoBehaviour
 
     public ChasingState chasingState = ChasingState.None;
 
+    [SerializeField] private GameObject explosionParticles;
+
     private Vector3 _startPos;
 
     public Transform target;
@@ -57,6 +59,9 @@ public class AI_Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+            return;
+
         if (chasingState == ChasingState.Chaser)
         {
             splineAnimation.Pause();
@@ -146,6 +151,10 @@ public class AI_Car : MonoBehaviour
 
     public void TakeHit()
     {
+        GameObject explosionOfDoom = Instantiate(explosionParticles, transform.position, transform.rotation);
+        explosionOfDoom.transform.localScale *= 2.0f;
+        explosionOfDoom.transform.parent = transform;
+
         if (isChasingPlayer)
         {
             target.GetComponentInParent<carController_v2>().isChased = false;
@@ -155,6 +164,7 @@ public class AI_Car : MonoBehaviour
 
         baseCar.Explode();
         GetComponent<SplineAnimate>().Pause();
+
         // GetComponent<WwiseAudio_PlaySecret>().PlaySecret();
         // explode here
     }
