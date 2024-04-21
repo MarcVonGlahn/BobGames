@@ -96,6 +96,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Lose_fart" ID="{7660F593-6115-4748-9A5B-371D1B0661F9}">
+					<ChildrenList>
+						<Action Name="" ID="{43A5B384-4669-4FC6-AA2B-592BD71B1613}" ShortID="659082896">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lose_fart" ID="{3B690857-5EC4-407C-8047-8D7F0C663017}" WorkUnitID="{FD85FCB8-013C-46B4-A5B7-EA5CB4F743D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

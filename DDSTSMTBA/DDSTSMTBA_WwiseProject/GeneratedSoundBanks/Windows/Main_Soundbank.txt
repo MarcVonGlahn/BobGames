@@ -1,6 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	548088167	Play_BackgroundMusic			\Default Work Unit\Play_BackgroundMusic	
 	1631400290	Play_Miss			\Default Work Unit\Play_Miss	
+	2137060797	Stop_BackgroundMusic			\Default Work Unit\Stop_BackgroundMusic	
+	2445091216	Play_Win_jingle			\Default Work Unit\Play_Win_jingle	
+	2849851413	Play_Lose_fart			\Default Work Unit\Play_Lose_fart	
 	2957517431	Play_RaceCar_EngineSound			\Default Work Unit\Play_RaceCar_EngineSound	
 	2960666077	Play_Hit			\Default Work Unit\Play_Hit	
 	3269136221	Play_Secrets			\Default Work Unit\Play_Secrets	
@@ -20,6 +23,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9921773	Slap	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Slap_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit\Slap		75092
+	37663742	Win jingle	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Win jingle_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Win jingle\Win jingle		1503152
 	39508209	WhatsApp Ptt 2024-04-20 at 18_32_53	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\WhatsApp Ptt 2024-04-20 at 18.32.53_B98B60F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_32_53		493446
 	43685897	watching	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\watching_6CE193ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\watching		292680
 	51158736	Gravel Brake_01	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Gravel Brake_C383C550.wem		\Actor-Mixer Hierarchy\Default Work Unit\Braking\Gravel Brake_01		148328
@@ -37,6 +41,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	521341349	WhatsApp Ptt 2024-04-20 at 18_35_14	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\WhatsApp Ptt 2024-04-20 at 18.35.14_77F1F210.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_35_14		235610
 	524208417	Moan	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Moan_84381034.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Moan		210204
 	531066773	WhatsApp Ptt 2024-04-20 at 18_31_14	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\WhatsApp Ptt 2024-04-20 at 18.31.14_BBE1293B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\WhatsApp Ptt 2024-04-20 at 18_31_14		181106
+	574845993	lose_jingle_1	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\lose_jingle_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\lose_jingle\lose_jingle_1		888268
+	575608289	Lose_fart	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Lose_fart_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Lose_fart\Lose_fart		551348
 	579947419	Punch long grate	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Punch long grate_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit\Punch long grate		264420
 	588112302	Mommy	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Mommy_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secrets\Mommy		529296
 	599029997	Gravel Brake_02	C:\Users\marcv\Unity\NordicGameJam2024\BobGames\DDSTSMTBA\DDSTSMTBA_WwiseProject\.cache\Windows\SFX\Gravel Brake_5139C7C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Braking\Gravel Brake_02		162876
