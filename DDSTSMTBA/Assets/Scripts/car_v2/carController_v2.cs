@@ -48,6 +48,15 @@ public class carController_v2 : MonoBehaviour
         {
             TryAttack();
         }
+
+
+        // Quit Game
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+        }
     }
 
     private void Move(float vInput, float hInput)
