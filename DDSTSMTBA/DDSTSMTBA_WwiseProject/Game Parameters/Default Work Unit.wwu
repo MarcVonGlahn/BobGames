@@ -18,7 +18,7 @@
 				<GameParameter Name="Engine_Pitch_RTPC" ID="{3E25EC6F-0FA1-4DDC-9E06-234385D95F6D}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="19"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

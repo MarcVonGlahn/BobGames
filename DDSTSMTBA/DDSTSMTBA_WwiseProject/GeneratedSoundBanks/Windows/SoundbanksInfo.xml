@@ -36,7 +36,7 @@
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{FBD64F1F-E0F7-C7FE-E210-130CF0096595}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{57A6AC5B-C75D-D93A-72FD-5D1345A88668}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -313,5 +313,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E592B50E-E02D-03B6-A7DE-FF9D9BDD3344}</FileHash>
+	<FileHash>{24594E67-A5B2-8DD4-4613-A6166F610853}</FileHash>
 </SoundBanksInfo>
