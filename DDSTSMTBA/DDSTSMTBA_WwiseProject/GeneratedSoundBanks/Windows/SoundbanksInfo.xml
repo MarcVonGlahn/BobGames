@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F43D24F0-12D7-3B80-1476-BB166B74D7F1}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B9F270A4-5BF5-75DA-2327-3E7B928224D1}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -34,9 +34,10 @@
 				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
+				<GameParameter Id="4027122436" Name="Engine_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{8BCEE7B5-5311-5387-917A-A2331B1A0931}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{F880E831-4FE5-1A76-9F91-D6D8CFB5F5C4}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -66,15 +67,15 @@
 				</File>
 				<File Id="198160628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dogs paws.wav</ShortName>
-					<CachePath>SFX/Dogs paws_BB7C3BA6.wem</CachePath>
+					<CachePath>SFX/Dogs paws_3A123B3E.wem</CachePath>
 				</File>
 				<File Id="200401919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Haircut.wav</ShortName>
-					<CachePath>SFX/Haircut_00D44142.wem</CachePath>
+					<CachePath>SFX/Haircut_6BE1D601.wem</CachePath>
 				</File>
 				<File Id="338812724" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small penis .wav</ShortName>
-					<CachePath>SFX/Small penis _9F94363A.wem</CachePath>
+					<CachePath>SFX/Small penis _65359BA9.wem</CachePath>
 				</File>
 				<File Id="363517743" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.24.22.wav</ShortName>
@@ -82,7 +83,7 @@
 				</File>
 				<File Id="371641225" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toiletbrush.wav</ShortName>
-					<CachePath>SFX/Toiletbrush_48EB6648.wem</CachePath>
+					<CachePath>SFX/Toiletbrush_C6AC2883.wem</CachePath>
 				</File>
 				<File Id="407818786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RaceCar_EngineSound_03.wav</ShortName>
@@ -94,11 +95,11 @@
 				</File>
 				<File Id="452517742" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ugly boyrfriend.wav</ShortName>
-					<CachePath>SFX/Ugly boyrfriend_D8DF7CF3.wem</CachePath>
+					<CachePath>SFX/Ugly boyrfriend_00C097AC.wem</CachePath>
 				</File>
 				<File Id="454256881" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Boogers.wav</ShortName>
-					<CachePath>SFX/Boogers_7209C4F8.wem</CachePath>
+					<CachePath>SFX/Boogers_F1CDB814.wem</CachePath>
 				</File>
 				<File Id="521341349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.35.14.wav</ShortName>
@@ -106,7 +107,7 @@
 				</File>
 				<File Id="524208417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Moan.wav</ShortName>
-					<CachePath>SFX/Moan_12D0F908.wem</CachePath>
+					<CachePath>SFX/Moan_4C1E65CF.wem</CachePath>
 				</File>
 				<File Id="531066773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.31.14.wav</ShortName>
@@ -114,7 +115,7 @@
 				</File>
 				<File Id="535907001" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>I don't like your food.wav</ShortName>
-					<CachePath>SFX/I don't like your food_9EE6812A.wem</CachePath>
+					<CachePath>SFX/I don't like your food_74024D68.wem</CachePath>
 				</File>
 				<File Id="574845993" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>lose_jingle_1.wav</ShortName>
@@ -130,7 +131,7 @@
 				</File>
 				<File Id="588112302" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mommy.wav</ShortName>
-					<CachePath>SFX/Mommy_DB7F054A.wem</CachePath>
+					<CachePath>SFX/Mommy_12FFD5A2.wem</CachePath>
 				</File>
 				<File Id="599029997" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel Brake.wav</ShortName>
@@ -138,11 +139,11 @@
 				</File>
 				<File Id="614952438" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chat gpt.wav</ShortName>
-					<CachePath>SFX/Chat gpt_552B018A.wem</CachePath>
+					<CachePath>SFX/Chat gpt_106BEAC2.wem</CachePath>
 				</File>
 				<File Id="661695416" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Big penis.wav</ShortName>
-					<CachePath>SFX/Big penis_AD283A06.wem</CachePath>
+					<CachePath>SFX/Big penis_CA473FC4.wem</CachePath>
 				</File>
 				<File Id="672839098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slap_woosh.wav</ShortName>
@@ -194,7 +195,7 @@
 				</File>
 				<File Id="866418995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stole your food.wav</ShortName>
-					<CachePath>SFX/Stole your food_D3272944.wem</CachePath>
+					<CachePath>SFX/Stole your food_0EBE33FE.wem</CachePath>
 				</File>
 				<File Id="965060146" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WhatsApp Ptt 2024-04-20 at 18.27.10.wav</ShortName>
@@ -320,8 +321,9 @@
 				<GameParameter Id="1128801621" Name="SideChaining_RTPC"/>
 				<GameParameter Id="2043973872" Name="BackgroundMusicVolume"/>
 				<GameParameter Id="3767000970" Name="Engine_Pitch_RTPC"/>
+				<GameParameter Id="4027122436" Name="Engine_Volume"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D0E46195-B572-564C-BF1E-82F09DC04265}</FileHash>
+	<FileHash>{18B1159B-ECFF-B929-6CE0-9054C4CE07FC}</FileHash>
 </SoundBanksInfo>

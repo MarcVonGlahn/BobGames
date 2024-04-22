@@ -21,6 +21,11 @@
 						<Property Name="Max" Type="Real64" Value="19"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Engine_Volume" ID="{3F06E4C8-AA7E-4ECA-9BF8-F4EC1E2FB003}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -690,11 +690,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d41a78973190a84fa5c39de2124ec77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNPC: 0
+  isNPC: 1
   enginePitchRTPC:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 562073c64b7cb5f48aa7281b187c21ef,
+      type: 2}
+  engineVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f63eb7ae26f2c374aa91a940e9ddd801,
       type: 2}
 --- !u!1 &3530103827130773452
 GameObject:

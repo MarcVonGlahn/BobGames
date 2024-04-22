@@ -28,6 +28,7 @@ namespace AK
     {
         static const AkUniqueID BACKGROUNDMUSICVOLUME = 2043973872U;
         static const AkUniqueID ENGINE_PITCH_RTPC = 3767000970U;
+        static const AkUniqueID ENGINE_VOLUME = 4027122436U;
         static const AkUniqueID SIDECHAINING_RTPC = 1128801621U;
     } // namespace GAME_PARAMETERS
 

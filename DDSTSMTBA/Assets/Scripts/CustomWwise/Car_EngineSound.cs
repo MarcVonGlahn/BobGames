@@ -6,6 +6,7 @@ public class Car_EngineSound : MonoBehaviour
 {
     public bool isNPC = false;
     public AK.Wwise.RTPC enginePitchRTPC;
+    public AK.Wwise.RTPC engineVolumeRTPC;
 
     CarController _carController;
 
@@ -14,6 +15,11 @@ public class Car_EngineSound : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+
+        if(isNPC)
+        {
+            engineVolumeRTPC.SetValue(gameObject, 20f);
+        }
     }
 
     private void Update()
